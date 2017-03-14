@@ -1,12 +1,12 @@
-var User = require('../models/User');
+var PipelineRun = require('../models/PipelineRun');
 
-/* Database requests made to the User collection
+/* Database requests made to the PipelineRun collection
  * is facilitated here. API will route here.
  */
 
 module.exports = {
   get: function(params, isPrivate, callback) {
-  	User.find(params, function(error, users) {
+  	PipelineRun.find(params, function(error, runs) {
       if (error) {
       	if (callback != null) {
           callback(error, null);
@@ -16,18 +16,18 @@ module.exports = {
       else {
       	if (callback != null) {
       	  if (isPrivate) {
-            callback(null, users);
+            callback(null, runs);
       	  } 
 
       	  else if (!isPrivate) {
-      	    var userSummaries = [];
+      	    var runSummaries = [];
       	  	
-      	  	for (var i = 0; i < users.length; ++i) {
-              var user = users[i];
-              userSummaries.push(user.summary());
+      	  	for (var i = 0; i < runs.length; ++i) {
+              var run = runs[i];
+              runSummaries.push(run.summary());
       	  	}
 
-      	  	callback(null, userSummaries);
+      	  	callback(null, runSummaries);
       	  }
       	}
       }
@@ -35,10 +35,10 @@ module.exports = {
   },
 
   getByID: function(id, isPrivate, callback) {
-    User.findById(id, function(error, user) {
+    PipelineRun.findById(id, function(error, run) {
       if (error) {
         if(callback != null) {
-          var msg = 'User with ID ' + id + ' not found.';
+          var msg = 'Run with ID ' + id + ' not found.';
           callback({message:msg}, null);
         }
       }
@@ -46,11 +46,11 @@ module.exports = {
       else {
         if(callback != null) {
           if(isPrivate) {
-            callback(null, user);
+            callback(null, run);
           }
 
           else if (!isPrivate) {
-            callback(null, user.summary());
+            callback(null, run.summary());
           }
         }   
       }
