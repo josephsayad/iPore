@@ -1,0 +1,3 @@
+rootProject.name = 'iPore'
+
+include ':app'

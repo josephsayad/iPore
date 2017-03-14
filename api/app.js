@@ -6,9 +6,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var sessions = require('client-sessions');
 
 var index = require('./routes/index');
 var api = require('./routes/api');
+var account = require('./routes/account');
 
 var mongodbUrl = 'mongodb://localhost/' + appName;
 mongoose.connect(mongodbUrl, function(error, response) {
@@ -35,9 +37,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(sessions({
+  cookieName: 'session', // key name added to the request object 
+  secret: '729refvvw&rt234*EmEmbE2flRPvr9^84+' // large unguessable string 
+}));
 
 app.use('/', index);
 app.use('/api', api);
+app.use('/account', account);
 
 /* Catch 404, and forward to error handler */
 

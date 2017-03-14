@@ -24,6 +24,7 @@
             }
           </script>
         </div>
+        
         <div class="col-xs-6">
           <h3>Pipeline Info</h3>
           <form action="/api/pipelineRun" method="post" autocomplete="off">
@@ -40,6 +41,24 @@
           </script>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <h3>Login</h3>
+          <form action="/account/login" method="post" autocomplete="off">
+            <input type="text" class="form-control" name="email" placeholder="Email"/><br/>
+            <input type="password" class="form-control" name="password" placeholder="Password"/><br/>
+            <input type="submit" class="btn btn-primary" value="Submit" id="btnsubmit" onclick="submitForm()"/>
+          </form>
+          <script>
+            function submitForm() {
+              var form = document.getElementsByName('contact-form')[0];
+              form.submit(); // Submit
+              form.reset();  // Reset
+              return false; // Prevent page refresh
+            }
+          </script>
+        </div>
+      </div>      
     </div>
   </body>
 </html>
