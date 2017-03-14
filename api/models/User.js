@@ -31,6 +31,7 @@ var userSchema = new mongoose.Schema({
 
 userSchema.methods.summary = function() {
   var summary = {
+    name: this.name,
     email: this.email,
     timestamp: this.timestamp,
     id: this._id

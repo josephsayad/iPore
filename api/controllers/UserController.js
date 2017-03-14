@@ -1,4 +1,5 @@
 var User = require('../models/User');
+var bcrypt = require('bcryptjs');
 
 /* Database requests made to the User collection
  * is facilitated here. API will route here.
@@ -53,6 +54,31 @@ module.exports = {
             callback(null, user.summary());
           }
         }   
+      }
+    });
+  },
+
+  post: function(params, callback) {
+    
+    /* Hashing User Password */
+
+    var password = params['password'];
+    var hashedPassword = bcrypt.hashSync(password, 10);
+    params['password'] = hashedPassword;
+
+    /* Create user object in MongoDB */
+
+    User.create(params, function(error, newUser) {
+      if (error) {
+        if (callback != null) {
+          callback(error, null);
+        }
+      }
+
+      else {
+        if (callback != null) {
+          callback(null, newUser);
+        }
       }
     });
   }

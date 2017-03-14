@@ -55,5 +55,21 @@ module.exports = {
         }   
       }
     });
+  },
+
+  post: function(params, callback) {
+    PipelineRun.create(params, function(error, newRun) {
+      if (error) {
+        if (callback != null) {
+          callback(error, null);
+        }
+      }
+
+      else {
+        if (callback != null) {
+          callback(null, newRun);
+        }
+      }
+    });
   }
 };
