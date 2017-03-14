@@ -14,7 +14,8 @@ var mongodbUrl = 'mongodb://localhost/' + appName;
 mongoose.connect(mongodbUrl, function(error, response) {
   if (error) {
     console.log('MongoDB connection failed: ' + error);
-  } else {
+  } 
+  else {
   	var apiDetail = ' is up. Database-related requests are permitted.';
     console.log('MongoDB connection success: ' + appName + apiDetail);
   }
