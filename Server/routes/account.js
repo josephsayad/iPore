@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+
 var bcrypt = require('bcryptjs');
 var userController = require('../controllers/UserController');
 
@@ -7,9 +8,6 @@ router.post('/:action', function(req, res, next) {
   var action = req.params.action;
   
   if(action == 'login') {
-
-    //  Bug Fix 1: password attributes in model! Do not 
-    //  include trim or required attributes.
 
     var loginInfo = req.body; 
     var email = loginInfo.email.toLowerCase();
@@ -19,18 +17,17 @@ router.post('/:action', function(req, res, next) {
     userController.get({email: email}, true, function(err, result) {
       if(err) { 
         res.json({
-          confirmation: 'fail',
+          status: 'fail',
           message: err
         });
       }
 
       else {
         if(result.length == 0) { //  Invalid Email.
-          var msg = email + ' is not recognized'; 
-          
           res.json({
-            confirmation: 'fail',
-            message: msg
+            status: 'fail',
+            message: 'Invalid Email',
+            attemptedLogin: { email: email, password: loginInfo.password }
           });
         }
         
@@ -41,7 +38,7 @@ router.post('/:action', function(req, res, next) {
 
           if(passwordCheck == false) {
             res.json({
-              confirmation: 'fail',
+              status: 'fail',
               message: 'Invalid Password'
             })
           }
@@ -51,7 +48,8 @@ router.post('/:action', function(req, res, next) {
             req.session.user = accountSummary.id;
 
             res.json({
-              confirmation: 'success',
+              status: 'success',
+              message: 'loggedIn',
               loggedUser: accountSummary
             });
           }
@@ -68,15 +66,15 @@ router.get('/:action', function(req, res, next) {
     req.session.reset();  
 
     res.json({
-      confirmation: 'success',
-      message: 'User logged out'
+      status: 'success',
+      message: 'loggedOut'
     });
   }
 
   if(action == 'currentuser') {
     if(req.session == null || req.session.user == null) {
       res.json({
-        confirmation: 'fail',
+        status: 'fail',
         message: 'Not logged in'
       });
     }
@@ -87,14 +85,14 @@ router.get('/:action', function(req, res, next) {
       userController.getByID(userID, false, function(err, result) {
         if(err) {
           res.json({
-            confirmation: 'fail',
+            status: 'fail',
             message: err.message
           });
         }
 
         else {
           res.json({
-            confirmation: 'success',
+            status: 'success',
             loggedUser: result
           });
         }

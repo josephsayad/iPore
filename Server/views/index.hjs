@@ -10,9 +10,8 @@
         <div class="col-xs-6">
           <h3>User Register</h3>
           <form action="/api/user" method="post" autocomplete="off">
-            <input type="text" class="form-control" name="name" placeholder="Username"/><br/>
-            <input type="password" class="form-control" name="password" placeholder="Password"/><br/>
             <input type="email" class="form-control" name="email" placeholder="Email"/><br/>
+            <input type="password" class="form-control" name="password" placeholder="Password"/><br/>
             <input type="submit" class="btn btn-primary" value="Submit" id="btnsubmit" onclick="submitForm()"/>
           </form>
           <script>

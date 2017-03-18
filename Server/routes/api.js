@@ -28,7 +28,7 @@ router.get('/:resource', function(req, res, next) {
 
   else {
   	controller.get(req.query, false, function(error, results) {
-  	  if (error) {
+  	  if(error) {
         res.json({
           status: 'fail',
           message: error
