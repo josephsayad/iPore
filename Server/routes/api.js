@@ -78,7 +78,38 @@ router.get('/:resource/:id', function(req, res, next) {
   }
 });
 
-/* Create object */
+/* GET User by Email from MongoDB */
+
+router.get('/:resource/email/:email', function(req, res, next) {
+  var resource = req.params.resource;
+  var email = req.params.email;
+  controller = controllers[resource];
+
+  if(controller !== userController) {
+    res.json({
+      status: 'fail',
+      message: 'Invalid resource'
+    })
+  }
+
+  controller.getByEmail(email, false, function(error, result) {
+    if (error) {
+      res.json({
+        status: 'fail',
+        message: error.message
+      });
+    }
+
+    else {
+      res.json({
+        status: 'success',
+        result: result
+      });
+    }
+  });
+});
+
+/* POST in MongoDB */
 
 router.post('/:resource', function(req, res, next) {
   var resource = req.params.resource;

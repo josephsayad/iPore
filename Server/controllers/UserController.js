@@ -58,6 +58,29 @@ module.exports = {
     });
   },
 
+  getByEmail: function(email, isPrivate, callback) {
+    User.findOne({email: new RegExp('^'+email+'$', "i")}, function(error, user) {
+      if(user === null) {
+        if(callback != null) {
+          var msg = 'User not found.';
+          callback({message:msg}, null);
+        }
+      }
+
+      else {
+        if(callback != null) {
+          if(isPrivate) {
+            callback(null, user);
+          }
+
+          else if (!isPrivate) {
+            callback(null, user.summary());
+          }
+        }            
+      }
+    });
+  },
+
   post: function(params, callback) {
     
     /* Hashing User Password */

@@ -20,17 +20,17 @@ const Card = (props) => {
 const styles = {
   viewStyle: {
     borderWidth: 1,
-    borderRadius: 3,
-    borderColor: '#fff',
-    borderBottomWidth: 0, // For CardSection Comp...
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 0.5 },
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
-    elevation: 0.5, 
-    marginLeft: 5, 
+    borderBottomWidth: 0,
+    marginTop: 18,
+    marginLeft: 5,
     marginRight: 5,
-    marginTop: 10
+    borderRadius: 2,
+    borderColor: '#d0d0d0',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1, 
+    shadowRadius: 1.5,
+    elevation: 5
   }
 };
 
