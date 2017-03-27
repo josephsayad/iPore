@@ -10,10 +10,12 @@
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
+    "dir-to-json": "0.0.3",
     "express": "~4.14.1",
     "hjs": "~0.0.6",
     "mongoose": "^4.9.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "watch": "^1.0.2"
   }
 }
