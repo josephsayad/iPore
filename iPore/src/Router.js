@@ -45,7 +45,7 @@ const RouterComponent = () => {
         <Scene 
           key="pipelineRunCreate" 
           component={PipelineRunCreate} 
-          title='Start a Run' 
+          title='Pipeline' 
         />
       </Scene>
     </Router>

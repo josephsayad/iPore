@@ -6,6 +6,7 @@ export const LOGIN_USER = 'login_user';
 export const LOGIN_USER_SUCCESS = 'login_user_success';
 export const LOGIN_USER_FAIL = 'login_user_fail';
 export const GO_TO_REGISTER_FORM = 'go_to_register_form';
+export const LOGOUT_USER = 'logout_user';
 
 /* Register Actions */
 
@@ -15,3 +16,13 @@ export const REGISTER_USER = 'register_user';
 export const REGISTER_USER_SUCCESS = 'register_user_success';
 export const REGISTER_USER_FAIL = 'register_user_fail';
 export const CLEAR_REGISTER_FORM = 'clear_regiser_form';
+
+/* User Actions */
+
+export const NAME_CHANGED = 'name_changed';
+export const FAST5_PATH_CHANGED = 'fast5_path_changed';
+export const REFERENCE_PATH_CHANGED = 'reference_path_changed';
+export const RUN_PIPELINE = 'run_pipeline';
+export const RUN_PIPELINE_SUCCESS = 'run_pipeline_success';
+export const RUN_PIPELINE_FAIL = 'run_pipeline_fail';
+export const CLEAR_PIPELINERUN_CREATE = 'clear_pipelinerun_create';

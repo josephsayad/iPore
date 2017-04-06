@@ -1,4 +1,4 @@
-import auth from './auth';
+import auth from './async/auth';
 import { 
   NEW_EMAIL_CHANGED, 
   NEW_PASSWORD_CHANGED,
@@ -22,11 +22,11 @@ export const newPasswordChanged = (text) => {
   };
 };
 
-export const registerUser = ({ email, password }) => {
+export const registerUser = ({ newEmail, newPassword }) => {
   return (dispatch) => {
     dispatch({ type: REGISTER_USER });
 
-    auth.createUserWithEmailAndPassword(email, password)
+    auth.createUserWithEmailAndPassword(newEmail, newPassword)
       .then(user => registerUserSuccess(dispatch, user))
       .catch((errorMessage) => registerUserFail(dispatch, errorMessage));
   };
@@ -39,10 +39,10 @@ export const registerUserFail = (dispatch, errorMessage) => {
   });
 };
 
-export const registerUserSuccess = (dispatch, user) => {
+export const registerUserSuccess = (dispatch, newUser) => {
   dispatch({ 
     type: REGISTER_USER_SUCCESS, 
-    payload: user 
+    payload: newUser 
   });
 };
 

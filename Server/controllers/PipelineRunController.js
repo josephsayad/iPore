@@ -57,6 +57,30 @@ module.exports = {
     });
   },
 
+  // getByName: function(name, isPrivate, callback) {
+  //   console.log('name is ' + name);
+  //   PipelineRun.findOne({pipelineName: new RegExp('^'+name+'$', "i")}, function(error, run) {
+  //     if(run === null) {
+  //       if(callback != null) {
+  //         var msg = 'Run instance ' + name + ' not found.'
+  //         callback({message:msg}, null);
+  //       }
+  //     }
+
+  //     else {
+  //       if(callback != null) {
+  //         if(isPrivate) {
+  //           callback(null, run);
+  //         }
+
+  //         else if (!isPrivate) {
+  //           callback(null, run.summary());
+  //         }
+  //       }            
+  //     }
+  //   });
+  // },
+
   post: function(params, callback) {
     PipelineRun.create(params, function(error, newRun) {
       if (error) {

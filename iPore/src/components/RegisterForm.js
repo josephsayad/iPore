@@ -18,8 +18,8 @@ class RegisterForm extends Component {
   }
   
   onButtonPress() {    
-    const { email, password } = this.props;
-    this.props.registerUser({ email, password });
+    const { newEmail, newPassword } = this.props;
+    this.props.registerUser({ newEmail, newPassword });
   }
 
   renderButton() {
@@ -43,7 +43,7 @@ class RegisterForm extends Component {
             label="Email"
             placeholder="signup@gmail.com"
             onChangeText={this.onEmailChange.bind(this)}
-            value={this.props.email}
+            value={this.props.newEmail}
           />
         </CardSection>
 
@@ -53,7 +53,7 @@ class RegisterForm extends Component {
             label="Password"
             placeholder="password"
             onChangeText={this.onPasswordChange.bind(this)}
-            value={this.props.password}
+            value={this.props.newPassword}
           />   	
         </CardSection>
 
@@ -76,11 +76,11 @@ const styles = {
 };
 
 const mapStateToProps = ({ register }) => {
-  const { email, password, error, loading } = register;
+  const { newEmail, newPassword, error, loading } = register;
   
   return { 
-    email, 
-    password,
+    newEmail, 
+    newPassword,
     error,
     loading
   };

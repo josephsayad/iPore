@@ -1,12 +1,13 @@
 import { Actions } from 'react-native-router-flux';
-import auth from './auth';
+import auth from './async/auth';
 import { 
   EMAIL_CHANGED, 
   PASSWORD_CHANGED,
   LOGIN_USER,
   LOGIN_USER_SUCCESS,
   LOGIN_USER_FAIL,
-  GO_TO_REGISTER_FORM
+  GO_TO_REGISTER_FORM,
+  LOGOUT_USER
 } from './types';
 
 export const emailChanged = (text) => {
@@ -52,4 +53,9 @@ export const loginUserSuccess = (dispatch, user) => {
   });
 
   Actions.main();
+};
+
+export const logoutUser = () => {
+  Actions.account({ type: 'reset' });
+  return { type: LOGOUT_USER };
 };

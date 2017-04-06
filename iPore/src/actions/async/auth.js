@@ -11,15 +11,15 @@ export default {
           const { status } = response.data;
 
           if (status === 'success') {
-            console.log('Successful login...');
+            // console.log('Successful login...');
             resolve(response.data);
           } else if (status === 'fail') {
-            console.log('Invalid email or password...');
+            // console.log('Invalid email or password...');
             reject(response);
           }
         }) 
         .catch(error => {
-          console.log('Connection error...');
+          // console.log('Connection error...');
           reject(error);
         });
     });

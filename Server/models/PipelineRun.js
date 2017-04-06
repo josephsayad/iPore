@@ -1,16 +1,26 @@
 var mongoose = require('mongoose');
 
 var pipelineRunSchema = new mongoose.Schema({
-  name: {
+  pipelineName: {
   	type: String, 
   	required: true,
   	trim: true,
+    lowercase: true,
   	default: ''
   },
 
-  state: {
-  	type: String,
-  	default: 'resting'
+  fast5Path: {
+    type: String, 
+    required: true,
+    trim: true,
+    default: ''
+  },
+
+  referencePath: {
+    type: String, 
+    required: true,
+    trim: true,
+    default: ''
   },
 
   timestamp: {
@@ -21,8 +31,7 @@ var pipelineRunSchema = new mongoose.Schema({
 
 pipelineRunSchema.methods.summary = function() {
   var summary = {
-    name: this.name,
-    state: this.state,
+    pipelineName: this.pipelineName,
     timestamp: this.timestamp,
     id: this._id
   };

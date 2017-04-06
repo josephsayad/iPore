@@ -13,6 +13,7 @@
     "dir-to-json": "0.0.3",
     "express": "~4.14.1",
     "hjs": "~0.0.6",
+    "jsonwebtoken": "^7.3.0",
     "mongoose": "^4.9.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2",

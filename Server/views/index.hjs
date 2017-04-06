@@ -26,8 +26,10 @@
         
         <div class="col-xs-6">
           <h3>Pipeline Info</h3>
-          <form action="/api/pipelineRun" method="post" autocomplete="off">
-            <input type="text" class="form-control" name="name" placeholder="Pipeline Name"/><br/>
+          <form action="/api/user/58e551d8e85e0810626c756b/run" method="post" autocomplete="off">
+            <input type="text" class="form-control" name="pipelineName" placeholder="Pipeline Name"/><br/>
+            <input type="text" class="form-control" name="fast5Path" placeholder="Fast5 path"/><br/>
+            <input type="text" class="form-control" name="referencePath" placeholder="Reference path"/><br/>
             <input type="submit" class="btn btn-primary" value="Submit" id="btnsubmit" onclick="submitForm()"/>
           </form>
           <script>

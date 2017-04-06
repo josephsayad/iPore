@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-
 var bcrypt = require('bcryptjs');
+
 var userController = require('../controllers/UserController');
 
 router.post('/:action', function(req, res, next) {
@@ -47,6 +47,10 @@ router.post('/:action', function(req, res, next) {
             var accountSummary = accountInfo.summary();
             req.session.user = accountSummary.id;
 
+            // res.status(201).send({
+            //   id_token: createToken(user)
+            // });
+            
             res.json({
               status: 'success',
               message: 'loggedIn',

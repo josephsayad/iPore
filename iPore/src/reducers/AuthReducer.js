@@ -4,7 +4,8 @@ import {
   LOGIN_USER,
   LOGIN_USER_SUCCESS,
   LOGIN_USER_FAIL,
-  GO_TO_REGISTER_FORM
+  GO_TO_REGISTER_FORM,
+  LOGOUT_USER
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -28,6 +29,8 @@ export default (state = INITIAL_STATE, action) => {
     case LOGIN_USER_FAIL:
       return { ...state, error: 'Authentication failed.', password: '', loading: false };
     case GO_TO_REGISTER_FORM: 
+      return INITIAL_STATE;
+    case LOGOUT_USER: 
       return INITIAL_STATE;
     default:
       return state;
