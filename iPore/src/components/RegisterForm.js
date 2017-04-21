@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { clearRegisterForm, newEmailChanged, newPasswordChanged, registerUser } from '../actions';
-import { Card, CardSection, Input, Button, Spinner } from './common';
+import { Card, CardSection, Input, Button, Spinner, FooterWithNativeBase } from './common';
 
 class RegisterForm extends Component {
   componentWillMount() {
@@ -37,32 +37,40 @@ class RegisterForm extends Component {
 
   render() {
     return (
-      <Card>
-        <CardSection>
-          <Input 
-            label="Email"
-            placeholder="signup@gmail.com"
-            onChangeText={this.onEmailChange.bind(this)}
-            value={this.props.newEmail}
+      <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-between'}}>
+        <Card>
+          <CardSection>
+            <Input 
+              label="Email"
+              placeholder="signup@gmail.com"
+              onChangeText={this.onEmailChange.bind(this)}
+              value={this.props.newEmail}
+            />
+          </CardSection>
+
+          <CardSection>
+            <Input 
+              secureTextEntry
+              label="Password"
+              placeholder="password"
+              onChangeText={this.onPasswordChange.bind(this)}
+              value={this.props.newPassword}
+            />    
+          </CardSection>
+
+          <Text style={styles.errorTextStyle}>{this.props.error}</Text>
+
+          <CardSection>
+            {this.renderButton()}
+          </CardSection>        
+        </Card>
+        <View>
+          <FooterWithNativeBase 
+            style={{ position: 'absolute', left: 0, right: 0, bottom: 0 }} 
+            parent={'register'} 
           />
-        </CardSection>
-
-        <CardSection>
-          <Input 
-            secureTextEntry
-            label="Password"
-            placeholder="password"
-            onChangeText={this.onPasswordChange.bind(this)}
-            value={this.props.newPassword}
-          />   	
-        </CardSection>
-
-        <Text style={styles.errorTextStyle}>{this.props.error}</Text>
-
-        <CardSection>
-          {this.renderButton()}
-        </CardSection>        
-      </Card>
+        </View>        
+      </View>
     );
   }
 }

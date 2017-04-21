@@ -6,6 +6,10 @@ var router = express.Router();
 var childRouter = express.Router({ mergeParams: true });
 router.use('/:resource/:id/run', childRouter);
 
+/* Pipeline, Server connection */
+
+var commander = require('../commander');
+
 /* Import controllers */
 
 var userController = require('../controllers/UserController');
@@ -58,6 +62,7 @@ router.get('/:resource', function(req, res, next) {
   }
 });
 
+/* Import controllers */
 /* GET by ID */
 
 router.get('/:resource/:id', function(req, res, next) {
@@ -284,7 +289,14 @@ childRouter.post('/', function(req, res, next) {
         res.json({
           status: 'success', 
           result: result
-        });       
+        });
+
+        commander.runPipeline(
+          id, 
+          req.body.pipelineName, 
+          req.body.fast5Path, 
+          req.body.referencePath
+        );
       } 
     });
   }  

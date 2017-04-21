@@ -141,7 +141,7 @@ module.exports = {
           callback(null, {message:msg});
         } else {
 
-          for (let i = 0; i < user.runs.length; ++i) {
+          for (var i = 0; i < user.runs.length; ++i) {
             if (user.runs[i].pipelineName === name) {
               if(callback != null) {
                 return callback(null, user.runs[i]);

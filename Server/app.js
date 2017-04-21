@@ -11,7 +11,7 @@ var sessions = require('client-sessions');
 var index = require('./routes/index');
 var api = require('./routes/api');
 var account = require('./routes/account');
-var watcher = require('./watcher');
+var commander = require('./commander');
 
 var mongodbUrl = 'mongodb://localhost/' + appName;
 mongoose.connect(mongodbUrl, function(error, response) {
@@ -21,7 +21,7 @@ mongoose.connect(mongodbUrl, function(error, response) {
   else {
   	var apiDetail = ' is active. Connected to MongoDB.';
     console.log('[Server] ' + appName + apiDetail);
-    console.log('[Watcher] I am watching.');
+    console.log('[Commander] Is ready to command.');
   }
 });
 

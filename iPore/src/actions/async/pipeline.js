@@ -2,17 +2,16 @@ import axios from 'axios';
 
 export default {
   createAndRunPipelineInstance: (pipelineName, fast5Path, referencePath, id) => {
-    console.log(id);
     return new Promise((resolve, reject) => {
       if (pipelineName !== '' && fast5Path !== '' && referencePath !== '') {
-        axios.get('http://localhost:3000/api/user/' + id + '/run/' + pipelineName.toLowerCase(), {
+        axios.get('http://192.168.150.1:3000/api/user/' + id + '/run/' + pipelineName.toLowerCase(), {
             pipelineName
           })
           .then(response => {
             const { result } = response.data;
 
             if (result.message !== undefined && result.message === 'Run does not exist.') {
-              axios.post('http://localhost:3000/api/user/' + id + '/run/', {
+              axios.post('http://192.168.150.1:3000/api/user/' + id + '/run/', {
                   pipelineName,
                   fast5Path,
                   referencePath
@@ -33,6 +32,18 @@ export default {
       } else { 
         reject('Name & Directory paths required.'); 
       }
+    });
+  },
+
+  fetchPipelineInstances: (id) => {
+    return new Promise((resolve, reject) => {
+      axios.get('http://192.168.150.1:3000/api/user/' + id + '/run', {})
+        .then(response => {
+          resolve(response);
+        }) 
+        .catch(() => {
+          reject('Connection error.');
+        });
     });
   }
 };

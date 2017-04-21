@@ -11,6 +11,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "dir-to-json": "0.0.3",
+    "es6-promise": "^4.1.0",
     "express": "~4.14.1",
     "hjs": "~0.0.6",
     "jsonwebtoken": "^7.3.0",

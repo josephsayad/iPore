@@ -3,7 +3,7 @@ import axios from 'axios';
 export default {
   signInWithEmailAndPassword: (email, password) => {
     return new Promise((resolve, reject) => {
-      axios.post('http://localhost:3000/account/login', {
+      axios.post('http://192.168.150.1:3000/account/login', {
           password,
           email
         })
@@ -28,7 +28,7 @@ export default {
   createUserWithEmailAndPassword: (email, password) => {
     return new Promise((resolve, reject) => {
       if (email !== '' && password !== '') {
-        axios.get('http://localhost:3000/api/user/email/' + email, {
+        axios.get('http://192.168.150.1:3000/api/user/email/' + email, {
             password,
             email
           })
@@ -38,7 +38,7 @@ export default {
             if (status === 'success') {
               reject('User Account Taken.');
             } else if (status === 'fail') {
-              axios.post('http://localhost:3000/api/user/', {
+              axios.post('http://192.168.150.1:3000/api/user/', {
                   password,
                   email
                 })

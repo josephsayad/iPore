@@ -23,6 +23,20 @@ var pipelineRunSchema = new mongoose.Schema({
     default: ''
   },
 
+  status: {
+    type: String,
+    default: 'incomplete'
+  },
+
+  error: {
+    type: String,
+    default: ''
+  },
+
+  output: { 
+    type: {} 
+  },
+
   timestamp: {
   	type: Date,
   	default: Date.now

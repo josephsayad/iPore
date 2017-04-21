@@ -7,7 +7,8 @@ import {
   RUN_PIPELINE,
   RUN_PIPELINE_FAIL,
   RUN_PIPELINE_SUCCESS,
-  CLEAR_PIPELINERUN_CREATE
+  CLEAR_PIPELINERUN_CREATE,
+  FETCH_PIPELINES_SUCCESS
 } from './types';
 
 export const nameChanged = (text) => {
@@ -62,4 +63,16 @@ export const runPipelineSuccess = (dispatch, newRun) => {
 
 export const clearPipelineRunCreate = () => {
   return { type: CLEAR_PIPELINERUN_CREATE };
+};
+
+export const pipelinesFetch = ({ user }) => {
+  return (dispatch) => {
+    const { id } = user.loggedUser;
+    
+    pipeline.fetchPipelineInstances(id)
+      .then((runs) => {
+        dispatch({ type: FETCH_PIPELINES_SUCCESS, payload: runs.data.results.runs });
+      })
+      .catch((errorMessage) => console.log(errorMessage));
+  };
 };

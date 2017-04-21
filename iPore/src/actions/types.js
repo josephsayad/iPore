@@ -26,3 +26,4 @@ export const RUN_PIPELINE = 'run_pipeline';
 export const RUN_PIPELINE_SUCCESS = 'run_pipeline_success';
 export const RUN_PIPELINE_FAIL = 'run_pipeline_fail';
 export const CLEAR_PIPELINERUN_CREATE = 'clear_pipelinerun_create';
+export const FETCH_PIPELINES_SUCCESS = 'fetch_pipelines_success';
