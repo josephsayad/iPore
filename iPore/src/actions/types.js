@@ -27,3 +27,7 @@ export const RUN_PIPELINE_SUCCESS = 'run_pipeline_success';
 export const RUN_PIPELINE_FAIL = 'run_pipeline_fail';
 export const CLEAR_PIPELINERUN_CREATE = 'clear_pipelinerun_create';
 export const FETCH_PIPELINES_SUCCESS = 'fetch_pipelines_success';
+export const SELECT_INSTANCE = 'select_instance';
+export const CLEAR_SELECT = 'clear_select'; // May remove...
+export const DISPLAY_PORETOOLS_OUTPUT = 'display_poretools_output';
+export const DISPLAY_MAFTOOLS_OUTPUT = 'display_maftools_output';

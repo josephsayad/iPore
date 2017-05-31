@@ -8,7 +8,11 @@ import {
   RUN_PIPELINE_FAIL,
   RUN_PIPELINE_SUCCESS,
   CLEAR_PIPELINERUN_CREATE,
-  FETCH_PIPELINES_SUCCESS
+  FETCH_PIPELINES_SUCCESS,
+  SELECT_INSTANCE,
+  CLEAR_SELECT,
+  DISPLAY_PORETOOLS_OUTPUT,
+  DISPLAY_MAFTOOLS_OUTPUT
 } from './types';
 
 export const nameChanged = (text) => {
@@ -74,5 +78,36 @@ export const pipelinesFetch = ({ user }) => {
         dispatch({ type: FETCH_PIPELINES_SUCCESS, payload: runs.data.results.runs });
       })
       .catch((errorMessage) => console.log(errorMessage));
+  };
+};
+
+export const selectInstance = (instanceId) => {
+  return {
+    type: SELECT_INSTANCE,
+    payload: instanceId
+  };
+};
+
+export const clearSelect = () => {
+  return {
+    type: CLEAR_SELECT
+  };
+};
+
+export const displayPoretoolsOutput = (poretools) => {
+  Actions.toolOne();
+
+  return {
+    type: DISPLAY_PORETOOLS_OUTPUT, 
+    payload: poretools
+  };
+};
+
+export const displayMaftoolsOutput = (maftools) => {
+  Actions.toolThree();
+
+  return {
+    type: DISPLAY_MAFTOOLS_OUTPUT,
+    payload: maftools
   };
 };

@@ -1,5 +1,6 @@
 export * from './Button'; 
 export * from './Card';
+export * from './PipelineCard';
 export * from './CardSection';
 export * from './Header';
 export * from './Input';

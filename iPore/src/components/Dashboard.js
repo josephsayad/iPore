@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
-import { logoutUser } from '../actions';
 import PipelineList from './PipelineList';
-import { Card, CardSection, Button, FooterWithNativeBase } from './common';
+import { FooterWithNativeBase } from './common';
 
 class Dashboard extends Component {
-  onButtonPress() {    
-    this.props.logoutUser();
-  }
-
   userInformation() {
     const { user } = this.props;
 
@@ -22,17 +17,8 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-between' }}>
+      <View style={styles.viewStyles}>
         <PipelineList />
-        <Card>
-          <Text>Logged User: </Text>
-          {this.userInformation()}
-          <CardSection>
-            <Button onPress={this.onButtonPress.bind(this)}>
-              Logout
-            </Button>  
-          </CardSection>
-        </Card>
         <View>
           <FooterWithNativeBase 
             style={{ position: 'absolute', left: 0, right: 0, bottom: 0 }} 
@@ -50,4 +36,12 @@ const mapStateToProps = ({ auth }) => {
   return { user };
 };
 
-export default connect(mapStateToProps, { logoutUser })(Dashboard);
+const styles = {
+  viewStyles: {
+    flex: 1, 
+    flexDirection: 'column', 
+    justifyContent: 'space-between'
+  }
+};
+
+export default connect(mapStateToProps, {})(Dashboard);

@@ -2,8 +2,13 @@ import React from 'react';
 import { Router, Scene, Actions } from 'react-native-router-flux';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
+import LogoutButton from './components/LogoutButton';
 import Dashboard from './components/Dashboard';
 import PipelineRunCreate from './components/PipelineRunCreate';
+import Poretools from './components/Poretools';
+import Nanook from './components/Nanook';
+import Maftools from './components/Maftools';
+
 
 const RouterComponent = () => {
   const { 
@@ -22,7 +27,7 @@ const RouterComponent = () => {
         <Scene 
           key="login" 
           component={LoginForm} 
-          title={'iPore'} 
+          title="iPore" 
           initial 
         />
         <Scene 
@@ -37,6 +42,7 @@ const RouterComponent = () => {
         <Scene 
           rightTitle="Add"
           onRight={() => Actions.pipelineRunCreate()}
+          renderLeftButton={() => { return <LogoutButton />; }}
           key="dashboard"
           component={Dashboard} 
           title="Dashboard"
@@ -48,6 +54,38 @@ const RouterComponent = () => {
           title='Pipeline' 
         />
       </Scene>
+
+      <Scene key="toolOne">
+        <Scene
+          key="poretools" 
+          component={Poretools} 
+          title='Poretools'
+          leftTitle="Back"
+          onLeft={() => Actions.main({ type: 'reset' })}
+          initial
+        />
+      </Scene>
+      
+      <Scene key="toolTwo">
+        <Scene
+          key="nanook" 
+          component={Nanook} 
+          title='Nanook'
+          leftTitle="Back"
+          onLeft={() => Actions.main({ type: 'reset' })}
+        />
+      </Scene>
+
+      <Scene key="toolThree">
+        <Scene
+          key="maftools" 
+          component={Maftools} 
+          title='Maftools'
+          leftTitle="Back"
+          onLeft={() => Actions.main({ type: 'reset' })}
+        />
+      </Scene>
+
     </Router>
   );
 };

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ListView } from 'react-native';
-import { pipelinesFetch } from '../actions';
+import { pipelinesFetch, clearSelect } from '../actions';
 import PipelineListItem from './PipelineListItem';
 
 class PipelineList extends Component {
@@ -37,13 +37,12 @@ class PipelineList extends Component {
   }
 
   render() {
-    console.log(this.props);
-
     return (
       <ListView 
         enableEmptySections
         dataSource={this.dataSource}
         renderRow={this.renderRow}
+        style={{ paddingTop: 6 }}
       />
     );
   }
@@ -57,4 +56,4 @@ const mapStateToProps = ({ auth, pipelines }) => {
 };
 
 
-export default connect(mapStateToProps, { pipelinesFetch })(PipelineList);
+export default connect(mapStateToProps, { pipelinesFetch, clearSelect })(PipelineList);

@@ -13,17 +13,9 @@ class FooterWithNativeBase extends Component {
       return (
         <FooterTab>
           <Button>
-            <Icon name="home" style={{ color: '#007aff' }} />
-            <Text>Dashboard</Text>
-          </Button>
-          <Button>
-            <Icon active name="settings" style={{ color: '#007aff' }} />
-            <Text>Inputs</Text>           
-          </Button>
-          <Button>
-            <Icon active name="flask" style={{ color: '#007aff' }} />
-            <Text>Outputs</Text>              
-          </Button>                    
+            <Icon name="settings" style={{ color: '#007aff' }} />
+            <Text>Documentation</Text>
+          </Button>                 
         </FooterTab>
       );
     }
