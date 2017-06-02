@@ -23,7 +23,8 @@ class LogoutButton extends Component {
 const styles = {
   buttonStyle: {
     paddingBottom: 8, 
-    height: 35
+    height: 35,
+    backgroundColor: '#2876cc'
   }
 };
 

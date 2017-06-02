@@ -13,8 +13,7 @@ class FooterWithNativeBase extends Component {
       return (
         <FooterTab>
           <Button>
-            <Icon name="settings" style={{ color: '#007aff' }} />
-            <Text>Documentation</Text>
+            <Icon name="ios-document" style={{ color: '#2876cc' }} />
           </Button>                 
         </FooterTab>
       );

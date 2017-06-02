@@ -88,18 +88,21 @@ export const selectInstance = (instanceId) => {
   };
 };
 
-export const clearSelect = () => {
-  return {
-    type: CLEAR_SELECT
-  };
-};
-
 export const displayPoretoolsOutput = (poretools) => {
   Actions.toolOne();
 
   return {
     type: DISPLAY_PORETOOLS_OUTPUT, 
     payload: poretools
+  };
+};
+
+export const displayNanookOutput = (nanook) => {
+  Actions.toolTwo();
+
+  return {
+    type: DISPLAY_MAFTOOLS_OUTPUT,
+    payload: nanook
   };
 };
 

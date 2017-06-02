@@ -6,10 +6,10 @@ import { Card, CardSection } from './common';
 class Poretools extends Component {
 	
   outputData() {
-    const { id, instanceId, tool, output } = this.props;
+    const { id, output } = this.props;
     const { titleStyle, imageStyle, linkStyle } = styles;
 
-    if (id !== null && instanceId !== null && tool !== null) {
+    if (id !== null && output !== null) {
       const server = 'http://192.168.150.1:3001/' + id + '/';
       
       /* Links to visualization output on Server */
@@ -23,11 +23,13 @@ class Poretools extends Component {
       const stats = server + output.children[6].path;
       const tabular = server + output.children[7].path;
 
+      /* Links to visualization output on Server */
+
       return (
         <View style={{ paddingBottom: 15 }}>
           <Card>
             <CardSection>
-              <Text style={titleStyle}>Collectors Curve</Text>
+              <Text style={titleStyle}>Yield Plot</Text>
             </CardSection>
             <CardSection>
               <Image source={{ uri: collectorsCurve }} style={imageStyle} />
@@ -36,7 +38,7 @@ class Poretools extends Component {
 
           <Card>
             <CardSection>
-              <Text style={titleStyle}>Histogram</Text>
+              <Text style={titleStyle}>Histogram of Read Sizes</Text>
             </CardSection>
             <CardSection>
               <Image source={{ uri: histogram }} style={imageStyle} />
@@ -45,7 +47,16 @@ class Poretools extends Component {
         
           <Card>
             <CardSection>
-              <Text style={titleStyle}>NucDist</Text>
+              <Text style={titleStyle}>Occupancy</Text>
+            </CardSection>
+            <CardSection>
+              <Image source={{ uri: occupancy }} style={imageStyle} />
+            </CardSection>
+          </Card>
+
+          <Card>
+            <CardSection>
+              <Text style={titleStyle}>Nucleotide Composition</Text>
             </CardSection>
             <CardSection>
               <Text 
@@ -59,16 +70,7 @@ class Poretools extends Component {
 
           <Card>
             <CardSection>
-              <Text style={titleStyle}>Occupancy</Text>
-            </CardSection>
-            <CardSection>
-              <Image source={{ uri: occupancy }} style={imageStyle} />
-            </CardSection>
-          </Card>
-
-          <Card>
-            <CardSection>
-              <Text style={titleStyle}>QualDist</Text>
+              <Text style={titleStyle}>Quality Score Composition</Text>
             </CardSection>
             <CardSection>
               <Text 
@@ -82,7 +84,7 @@ class Poretools extends Component {
 
           <Card>
             <CardSection>
-              <Text style={titleStyle}>Qualpos</Text>
+              <Text style={titleStyle}>Box-Whisker Plot</Text>
             </CardSection>
             <CardSection>
               <Text 
@@ -96,7 +98,7 @@ class Poretools extends Component {
 
           <Card>
             <CardSection>
-              <Text style={titleStyle}>Stats</Text>
+              <Text style={titleStyle}>Read Size Statistics</Text>
             </CardSection>
             <CardSection>
               <Text 
@@ -166,9 +168,9 @@ const styles = {
 
 const mapStateToProps = ({ auth, select }) => {
   const { id } = auth.user.loggedUser;
-  const { instanceId, tool, output } = select;
+  const { output } = select;
 
-  return { id, instanceId, tool, output }; 
+  return { id, output }; 
 };
 
 export default connect(mapStateToProps, {})(Poretools);

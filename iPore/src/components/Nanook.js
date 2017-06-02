@@ -1,14 +1,39 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ListView } from 'react-native';
+import { connect } from 'react-redux';
+import NanookListItem from './NanookListItem';
 
 class Nanook extends Component {
-  render() {
+  componentWillMount() {
+    const { output } = this.props;    
+
+    if (output !== null) {
+
+      const ds = new ListView.DataSource({
+        rowHasChanged: (r1, r2) => r1 !== r2 
+      });
+
+      this.dataSource = ds.cloneWithRows(this.props.output.children);
+    }
+  }
+
+  renderRow(nanookDir) {
+    return <NanookListItem item={nanookDir} />;
+  }
+
+  render() { 
     return (
-      <View>
-        <Text>Nanook Info Here!</Text>
-      </View>
+      <ListView
+        dataSource={this.dataSource}
+        renderRow={this.renderRow}
+      />
     );
   }
 }
 
-export default Nanook;
+const mapStateToProps = ({ select }) => {
+  const { output } = select;
+  return { output }; 
+};
+
+export default connect(mapStateToProps, {})(Nanook);
