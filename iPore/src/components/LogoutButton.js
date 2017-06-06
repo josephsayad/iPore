@@ -14,7 +14,7 @@ class LogoutButton extends Component {
         style={styles.buttonStyle}
         onPress={this.onButtonPress.bind(this)}
       >
-        <Icon name="ios-log-out" />
+        <Icon name="ios-log-out" style={{ color: '#2876cc' }} />
       </Button>
     );
   }
@@ -24,7 +24,10 @@ const styles = {
   buttonStyle: {
     paddingBottom: 8, 
     height: 35,
-    backgroundColor: '#2876cc'
+    backgroundColor: '#ffffff',
+    borderColor: '#2876cc',
+    borderWidth: 1,
+    marginLeft: 2
   }
 };
 

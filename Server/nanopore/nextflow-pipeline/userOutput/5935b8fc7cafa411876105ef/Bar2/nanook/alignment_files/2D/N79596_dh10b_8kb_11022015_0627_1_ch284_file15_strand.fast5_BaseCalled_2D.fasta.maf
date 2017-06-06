@@ -1,0 +1,30 @@
+##maf version=1
+# LAST version 756
+#
+# a=1 b=1 A=1 B=1 e=40 d=18 x=39 y=9 z=39 D=1e+06 E=95055.5
+# R=10 u=0 s=2 S=0 M=0 T=0 m=10 l=1 n=10 k=1 w=1000 t=0.910239 j=3 Q=0
+# /home/data/inputs/nanook/reference/nanook_ref
+# Reference sequences=3 normal letters=5260086
+# lambda=0.661467 K=0.0260716
+#
+#    A  C  G  T
+# A  1 -1 -1 -1
+# C -1  1 -1 -1
+# G -1 -1  1 -1
+# T -1 -1 -1  1
+#
+# Coordinates are 0-based.  For - strand matches, coordinates
+# in the reverse complement of the 2nd sequence are used.
+#
+# name start alnSize strand seqSize alignment
+#
+# batch 0
+a score=139 EG2=3.1e-24 E=1.4e-31
+s NC_005139    515384 363 + 3354505 ctagtcaccactgccgccaatgaacatgacctgaaccaattgaataagttgctgcacggtgaagagg-aattcgtttccggcgatgccggttatcagggggcagagaaacgggaagagctggaagacgctgatgtggaatggt-ta-atcgccgagcgccccagcaaagttcgcgcattgaaaaagcatccccgtaagaacaaaactgccatcaggattga--atacctgaaagccagtatccgtgcaaaagtggaacacccatttcgcatcatcaagtgccagttcgggttcatcaaaacgcgttataagggattgatgaaaaatgactcac--agttagccatgttattcgctttggcaaacctgttt
+s ch284_file15      8 351 +    5260 CTCGTTACCACCGCGGCCAACGAGCATGATCGGATC-AGCTGGATC---TGCTGCATGG---AGAGGCAATTTGTCTCAGCCGATGCCGGCTACCACAAGGC-GCCACA-GCGC-GAGCTATCC-AGGGTGA-GCGGAATCGTATCGATCGCCGAGCGCCCCGGCAAGGTAAGAACCTTGAAACAGCATCCACGCAAGAACAAAACGGCCATCAACATCGAAGATACATGAAAGCCAGCATCCGGGC--CAGGCGAGC-CCCATTTCGCATCATCAAGCGACAGTTCGGCTTCGTGAA---GC-ATACAAAGGGGTGCTGAAAAACGGATAACCAAACTGGCGATGTTATTCACGCTGGCCAACCTGTTT
+
+a score=89 EG2=7.1e-10 E=3.5e-17
+s NC_005140    1848806 835 + 1857073 acctc-tccagcgactttgacgagc-tgaccatccagtatcgccagcgtgagtggcaagctaatg--gtaaaagtgct-gccttgcc---cttgt-tgggaatcgacctcaatgtggccaccgagttcttca--atattgcgcttcaccacgtccatgccgacgccgcggccagagatgtcagaaacctgatcggcagtggaaaagccaggggcaaatatcagattgacgatctgtttgtctga-catttc-ctcgcgacgagaatccgcaggcagtacttttttctcaatggctttttgccaaataaggtcgcaatggatgccagcgc-cgtc-gtccttcacttcg--atgatgatcgagccgccctgatggaacgcatttaacgtgagggtgccaaatgatgccttcccttgttgttggcgcacatccggcatttcaatcccgt-gatcaa-taccattacgcaccaaatgaactaagggatcgacaatgcgctccagcacggttttatcgagttcagtg--tgttccccatggatttgcagatccacctctttgcctaagcggccgcacaagtc-acg--caccaaacgggggaagcggctaaaggcaa-a-actc-atcggtaacatgcgaatgttcagcacatgct-cctgtaagtctttgctgttttgcag-cagttgatctagacccgctttgagtttctctagtttgtcgat---ggagaagtcattgccgatctcag--ccagcatggattgggtgatcaccaactcacccacca--agttaattaagttatcgactttgtcgatgtcgactcgaatggag-gtcactgc--cgagtcatttttgttgctgcgcgtggccggtt
+s ch284_file15      85 803 -    5260 ACCTCATCC-GCAACGCGTACGGACATG-CCGTCGAGGAGCTCCAGCGTCAGCG-CAGTAAAATGCGGTCAATCTCTTAGCCGGTCCATGCTTGTATTCGACTGGATTTCGACATGACCGCCCA--TCTTCTGGATATTACG-TTAACGAC--CGATGC-GACGCCGCGCCCGGAGACGTC-GTGACCTGCTCTGCCGTGGGA--GCC-GATG--AATATCAGCTC--CGACTTCGTCGTCGCAACAGTTCACTC-CGTCGACC-TGCGC--GC------TTTTGC-C---GGAATT----CATACTCGGTTGACACCCAAGACA-CGCTCGTTAGTCCTGCGATCAGGAACCATGTTCG-GCAGCAATTATTCCACGCTTTTTACCTG------C----TGA-GCC---CGTTTTTATCATTTCAAGACCC-CGTTGC--TCCAGGCGTTCTTGTA--AATGCGTACCAG-TGGG-TCAGCGTTCGATAATGCGTTCTATCA-GGCTTTGTCGAGTTCAGCGAATCTTGCCCACCCCGT--CAGTTCTACCTGCTTGCCGCTTTTCCCGC----GTCCACGAACACCAGCCGGGGATACCAGCTCACATAAACATATTCCATCGGCATCATGCGAATCGACGTCACTCGATTCCTGCAAATCACGGC-GTTACGTTGTCAATCGCCCATG-CTGGTTATCAAAT-CACCAGCGA-TCTAACCGGGTCCAGTCGCTCCGGAACGCTGGGCAAGCATGGACTGGGTGATAACCAGCTGGACGACGAGTAGTTAATGCATTGATCAACCT--TCTACCGCTACACGGATGCTGCTTCATTGCTGCGCGTCGTTTTTCCCGCTCCACGCGGCCGGTT
+
+# Query sequences=1

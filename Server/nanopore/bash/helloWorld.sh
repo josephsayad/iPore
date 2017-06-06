@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pathToDesktop='/home/bioitcore/Desktop'
+pathToDesktop='/home/bioitcore'
 
 cd $pathToDesktop
 

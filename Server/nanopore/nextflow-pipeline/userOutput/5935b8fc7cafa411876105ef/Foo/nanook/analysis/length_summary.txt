@@ -1,0 +1,8 @@
+Nanotools report - main
+
+Length summary
+
+Type       NumReads TotalBases Mean       Long     Short    N50      N50Count N90      N90Count
+Template   500      1685124    3370.25    10794    260      4309     144      1969     354     
+Complement 500      1788780    3577.56    12018    300      4533     146      2014     358     
+2D         500      1824129    3648.26    12165    297      4672     145      2117     355     

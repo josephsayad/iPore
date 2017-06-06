@@ -1,0 +1,29 @@
+# LAST version 756
+#
+# a=1 b=1 A=1 B=1 e=40 d=18 x=39 y=9 z=39 D=1e+06 E=95055.5
+# R=10 u=0 s=2 S=0 M=0 T=0 m=10 l=1 n=10 k=1 w=1000 t=0.910239 j=3 Q=0
+# /home/data/inputs/nanook/reference/nanook_ref
+# Reference sequences=3 normal letters=5260086
+# lambda=0.661467 K=0.0260716
+#
+#    A  C  G  T
+# A  1 -1 -1 -1
+# C -1  1 -1 -1
+# G -1 -1  1 -1
+# T -1 -1 -1  1
+#
+# Coordinates are 0-based.  For - strand matches, coordinates
+# in the reverse complement of the 2nd sequence are used.
+#
+# name start alnSize strand seqSize alignment
+#
+# batch 0
+a score=55 EG2=4.1 E=8.8e-08
+s NC_005139    924894 461 + 3354505 tttaggaatggtggctacgacgggattcgaacctgtgacc-ccatc-attat--gagtgatgtgct---cta--accagctgagctacgtagc--catctt--ttggagc-gagacaata--taactattctctctctcagtga-c-a-accc-ctt-t--atgaaaggttttc-ac-tta-------aatagttggcaggtctacctggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacc---tgc--tgaaaacatggtgcggaa-gg---a-gag-a-ctcgaactctcacacctcgcg-gcgccagaacctaaatctggtgcgtctac-caatttcgccacttccgcaactattcctaataactctttgaaaaagttcttagggatggtggctacgacgggattcgaacctgtgaccccatcattatgagtgatgtg--ctctaaccagctgagctacgtagccaaaaccatgttttc
+s ch19_file194    435 454 +    2335 TTCAGAATTTATGGCTGGGACGGGATTCCA---T-TAATCTCCGGCTATTATCTGAGTGATGTGCTGAGCTAGTACCAATTGTTCTTCAAACCTCCAACTGAGTTGAACCAGGGAAATTAAGTAAA-ATGGGCGTGCTTACGGATCGATACCCGCATATGGATGAGACATGCTCCACATTACTCGAGAAAAACCTGGGA---CTA--TGAATTCGAACCAGGGAATG-CGGTATC-AATCTGGCTG-CTTA-CGCTTGGGGAGATACCCCATCCAGTCACAAC-GGTTTCTGAATGGTGTAGGAGCATATTGAACAACGACA-CTTGCGAGAGC--GAACCGGTA-CTGGTGCGTCTACACAATTTC-ACACT--CG-AA-TA----TGATGA-----TG----AGT--------AT-ATGGCTAC-ATAGGA-TCCATCCTTAGA----ATCATTATGAACCTTGTGCTCTCTAACCAACT-A-CTACGCTG-ATAAAGAATATTTTC
+
+a score=46 EG2=1.6e+03 E=3.5e-05
+s NC_005139    924116 413 + 3354505 cttccgcatcga-attttcat--gcatcaagacattgtc----ttaatagctaaatagtggcaggtctacctggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctacagctgacagcttacgctatcggtttctgaacattgctcagaaacgtaaataatggtgcggaaggagagactcgaactctcacaccttgcg-gcgccagaacctaaatctggtgcgtctac-caatttcgccacttccgcattatttattcctaaaaactctcaatgaagagaatgtttaggaatggtggctacgacgggattcgaacctgtgaccccatcattatgagtgatgtg--ctctaaccagctgagctacgtagccacaacaat-ttat-ggtgcggaaggagag
+s ch19_file194    566 338 +    2335 CTTACGGATCGATACCCGCATATGGATGA-GACATGCTCCACATTACTCGAGAAAAACCTG--GGACTA--TGAATTCGAACCAGGGAATG-CGGTATC-AATCTGGCTG-CTTA-CGCTTGGGGAGATACC-CCATC---CAG-TCAC---AACGGTTTCTGAA---TGGT-------GTA------GGAGCATATTGA---AC---AAC---GACA-CTTGCGAGAGC--GAACCGGTA-CTGGTGCGTCTACACAATTTC-ACACT--CG-A--A--TAT--------------GATGATGAGTAT--------A---TGGCTAC-ATAGGA-TCCATCCTTAGA----ATCATTATGAACCTTGTGCTCTCTAACCAACT-A-CTACGCTGATA-AAGAATATTTTCGGAGAAGAAGGAAAG
+
+# Query sequences=1

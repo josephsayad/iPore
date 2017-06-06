@@ -40,7 +40,7 @@ class PipelineListItem extends Component {
   renderCompletedInstanceDetail() {
     const { pipelineName } = this.props.pipelineInstance;
     const { instanceId } = this.props;
-    const { toolLabelStyles, toolNameStyles } = styles;
+    const { toolLabelStyle, toolNameStyle } = styles;
 
     if (instanceId === pipelineName) {
       return (
@@ -49,10 +49,10 @@ class PipelineListItem extends Component {
           <TouchableWithoutFeedback onPress={this.onPoretoolsPress.bind(this)}>
             <View>
               <CardSection>
-                <Text style={toolLabelStyles}>
+                <Text style={toolLabelStyle}>
                   Tool
                 </Text>
-                <Text style={toolNameStyles}>
+                <Text style={toolNameStyle}>
                   poretools
                 </Text>
               </CardSection>
@@ -62,10 +62,10 @@ class PipelineListItem extends Component {
           <TouchableWithoutFeedback onPress={this.onNanookPress.bind(this)}>
             <View>
               <CardSection>
-                <Text style={toolLabelStyles}>
+                <Text style={toolLabelStyle}>
                   Tool
                 </Text>
-                <Text style={toolNameStyles}>
+                <Text style={toolNameStyle}>
                   nanook
                 </Text>
               </CardSection>
@@ -75,10 +75,10 @@ class PipelineListItem extends Component {
           <TouchableWithoutFeedback onPress={this.onMaftoolsPress.bind(this)}>
             <View>
               <CardSection>
-                <Text style={toolLabelStyles}>
+                <Text style={toolLabelStyle}>
                   Tool
                 </Text>
-                <Text style={toolNameStyles}>
+                <Text style={toolNameStyle}>
                   maftools
                 </Text>
               </CardSection>
@@ -92,31 +92,31 @@ class PipelineListItem extends Component {
 
   renderTimeStamp() {
     const { timestamp } = this.props.pipelineInstance;
-    const { timestampStyles, timestampContainerStyles } = styles;
+    const { timestampStyle, timestampContainerStyle } = styles;
 
     const date = timestamp.split('T');
     
     return (
-      <View style={timestampContainerStyles}>
-        <Text style={timestampStyles}>{date[0]}</Text>
+      <View style={timestampContainerStyle}>
+        <Text style={timestampStyle}>{date[0]}</Text>
       </View>
     );
   }
 
   renderItem() {
     const { pipelineName, status } = this.props.pipelineInstance;
-    const { labelStyles, titleStyles, entryStyles } = styles;
+    const { labelStyle, titleStyle, entryStyle } = styles;
    
     if (status === 'incomplete') {
       return (
         <TouchableWithoutFeedback onPress={() => this.props.selectInstance(pipelineName)}>
           <View>
-            <View style={entryStyles}>
+            <View style={entryStyle}>
               <View style={{ flex: 1, flexDirection: 'row' }}>
-                <Text style={labelStyles}>
+                <Text style={labelStyle}>
                   Instance ID
                 </Text>
-                <Text style={titleStyles}>
+                <Text style={titleStyle}>
                   {pipelineName}
                 </Text>
               </View>
@@ -129,12 +129,12 @@ class PipelineListItem extends Component {
       return (
         <TouchableWithoutFeedback onPress={() => this.props.selectInstance(pipelineName)}>
           <View>
-            <View style={entryStyles}>
+            <View style={entryStyle}>
               <View style={{ flex: 1, flexDirection: 'row' }}>
-                <Text style={labelStyles}>
+                <Text style={labelStyle}>
                   Instance ID
                 </Text>
-                <Text style={titleStyles}>
+                <Text style={titleStyle}>
                   {pipelineName}
                 </Text>
               </View>
@@ -157,7 +157,7 @@ class PipelineListItem extends Component {
 }
 
 const styles = {
-  labelStyles: {
+  labelStyle: {
     fontSize: 14,
     fontStyle: 'italic',
     color: '#ffffff',
@@ -167,7 +167,7 @@ const styles = {
     fontWeight: '700'
   },
 
-  titleStyles: {
+  titleStyle: {
     fontSize: 14,
     paddingLeft: 15,
     paddingTop: 10,
@@ -175,43 +175,42 @@ const styles = {
     color: '#ffffff'
   },
 
-  timestampStyles: {
+  timestampStyle: {
     fontSize: 11,
-    paddingTop: 3,
-    paddingBottom: 2.5,
-    color: '#1c528e',
-    fontWeight: '700',
+    color: '#ffffff',
+    fontWeight: '400',
     paddingLeft: 7.5,
-    paddingRight: 7.5
+    paddingRight: 7.5,
+    paddingTop: 5
   },
 
-  timestampContainerStyles: {
-    borderColor: '#ffffff',
-    height: 25,
+  timestampContainerStyle: {
+    height: 27,
     borderRadius: 2,
-    borderWidth: 2,
-    marginRight: 25,
-    backgroundColor: '#ffffff'
+    marginRight: 40,
+    backgroundColor: 'transparent',
+    borderWidth: 1,
+    borderColor: '#ffffff'
   },
 
-  toolLabelStyles: {
+  toolLabelStyle: {
     fontSize: 14,
     fontStyle: 'italic',
-    color: '#007aff',
+    color: '#2876cc',
     paddingLeft: 15,
     paddingTop: 10,
     paddingBottom: 10,
     fontWeight: '500'
   },
 
-  toolNameStyles: {
+  toolNameStyle: {
     fontSize: 14,
     paddingLeft: 15,
     paddingTop: 10,
     paddingBottom: 10
   },
 
-  entryStyles: {
+  entryStyle: {
     flex: 1, 
     flexDirection: 'row',
     justifyContent: 'space-between',

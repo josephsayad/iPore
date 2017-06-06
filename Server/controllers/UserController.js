@@ -168,7 +168,7 @@ module.exports = {
       else {
         if(callback != null) {
           var runInstance = new run({ 
-            pipelineName: params['pipelineName'], 
+            pipelineName: params['pipelineName'].split(' ').join('_'), 
             fast5Path: params['fast5Path'],
             referencePath: params['referencePath']
           }); /* Create and instantiate instance */

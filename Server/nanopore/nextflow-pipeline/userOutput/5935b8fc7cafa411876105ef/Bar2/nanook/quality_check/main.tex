@@ -1,0 +1,499 @@
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{color}
+\usepackage[compact]{titlesec}
+\usepackage[portrait,top=1cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\usepackage{float}
+\restylefloat{table}
+\begin{document}
+\renewcommand*{\familydefault}{\sfdefault}
+\normalfont
+\section*{\large{NanoOK report for main}}
+\subsection*{Pass and fail counts}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c}
+{\bf Type} & {\bf Pass} & {\bf Fail} \\
+Template & 500 & 0  \\
+Complement & 500 & 0  \\
+2D & 500 & 0  \\
+\end{tabular}
+}
+\end{table}
+\subsection*{Read lengths}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c c c c c c c c}
+{\bf Type} & {\bf NumReads} & {\bf TotalBases} & {\bf Mean} & {\bf Longest} & {\bf Shortest} & {\bf N50} & {\bf N50Count} & {\bf N90} & {\bf N90Count} \\
+Template & 500 & 1685124 & 3370.25 & 10794 & 260 & 4309 & 144 & 1969 & 354 \\
+Complement & 500 & 1788780 & 3577.56 & 12018 & 300 & 4533 & 146 & 2014 & 358 \\
+2D & 500 & 1824129 & 3648.26 & 12165 & 297 & 4672 & 145 & 2117 & 355 \\
+\end{tabular}
+}
+\end{table}
+\vspace{-10mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.3\linewidth]{/home/data/inputs/nanook/main/graphs_last_passonly/all_Template_lengths.pdf}
+\includegraphics[width=.3\linewidth]{/home/data/inputs/nanook/main/graphs_last_passonly/all_Complement_lengths.pdf}
+\includegraphics[width=.3\linewidth]{/home/data/inputs/nanook/main/graphs_last_passonly/all_2D_lengths.pdf}
+\end{figure}
+\subsection*{Template alignments}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c}
+Number of reads & 500 & \\
+Number of reads with alignments & 45 & (9.00\%) \\
+Number of reads without alignments & 455 & (91.00\%) \\
+\end{tabular}
+}
+\end{table}
+\vspace{-10mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c c c c c c}
+          &             & {\bf Number of} & {\bf \% of} & {\bf Mean read} & {\bf Aligned} & {\bf Mean} & {\bf Longest} \\
+{\bf ID} & {\bf Size} & {\bf Reads}     & {\bf Reads}  & {\bf length}    & {\bf bases}   & {\bf coverage} & {\bf Perf Kmer} \\
+NC 005128 & 48508 & 0 & 0.00 & 0.00 & 0 & 0.00 & 0 \\
+NC 005139 & 3354505 & 43 & 8.60 & 5129.23 & 53616 & 0.02 & 0 \\
+NC 005140 & 1857073 & 2 & 0.40 & 3070.00 & 1199 & 0.00 & 0 \\
+\end{tabular}
+}
+\end{table}
+\subsection*{Complement alignments}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c}
+Number of reads & 500 & \\
+Number of reads with alignments & 40 & (8.00\%) \\
+Number of reads without alignments & 460 & (92.00\%) \\
+\end{tabular}
+}
+\end{table}
+\vspace{-10mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c c c c c c}
+          &             & {\bf Number of} & {\bf \% of} & {\bf Mean read} & {\bf Aligned} & {\bf Mean} & {\bf Longest} \\
+{\bf ID} & {\bf Size} & {\bf Reads}     & {\bf Reads}  & {\bf length}    & {\bf bases}   & {\bf coverage} & {\bf Perf Kmer} \\
+NC 005128 & 48508 & 0 & 0.00 & 0.00 & 0 & 0.00 & 0 \\
+NC 005139 & 3354505 & 35 & 7.00 & 5237.51 & 54614 & 0.02 & 0 \\
+NC 005140 & 1857073 & 5 & 1.00 & 3464.00 & 3889 & 0.00 & 0 \\
+\end{tabular}
+}
+\end{table}
+\subsection*{2D alignments}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c}
+Number of reads & 500 & \\
+Number of reads with alignments & 250 & (50.00\%) \\
+Number of reads without alignments & 250 & (50.00\%) \\
+\end{tabular}
+}
+\end{table}
+\vspace{-10mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c c c c c c}
+          &             & {\bf Number of} & {\bf \% of} & {\bf Mean read} & {\bf Aligned} & {\bf Mean} & {\bf Longest} \\
+{\bf ID} & {\bf Size} & {\bf Reads}     & {\bf Reads}  & {\bf length}    & {\bf bases}   & {\bf coverage} & {\bf Perf Kmer} \\
+NC 005128 & 48508 & 0 & 0.00 & 0.00 & 0 & 0.00 & 0 \\
+NC 005139 & 3354505 & 204 & 40.80 & 4231.70 & 367518 & 0.11 & 0 \\
+NC 005140 & 1857073 & 46 & 9.20 & 3830.28 & 48951 & 0.03 & 0 \\
+\end{tabular}
+}
+\end{table}
+\clearpage
+\subsection*{NC 005139 error analysis}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c c}
+ & Template & Complement & 2D \\
+Overall base identity (excluding indels) & 0.00\% & 0.00\% & 0.00\% \\
+Aligned base identity (excluding indels) & 0.00\% & 0.00\% & 0.00\% \\
+Identical bases per 100 aligned bases (including indels) & 0.00\% & 0.00\% & 0.00\% \\
+Inserted bases per 100 aligned bases (including indels) & 4.89\% & 5.33\% & 5.70\% \\
+Deleted bases per 100 aligned bases (including indels) & 11.30\% & 11.13\% & 6.97\% \\
+Substitutions per 100 aligned bases (including indels) & 83.82\% & 83.55\% & 87.32\% \\
+Mean insertion size & 1.54 & 1.54 & 1.55 \\
+Mean deletion size & 1.69 & 1.64 & 1.56 \\
+\end{tabular}
+}
+\end{table}
+\vspace{-5mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_insertions.pdf} \\
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_deletions.pdf}
+\end{figure}
+\subsection*{NC 005139 read identity}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_length_vs_identity_hist.pdf} \\
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_length_vs_identity_scatter.pdf} \\
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_read_fraction_vs_alignment_identity_scatter.pdf}
+\end{figure}
+\begin{figure}[H]
+\centering
+   \end{figure}
+\subsection*{NC 005139 perfect kmers}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_cumulative_perfect_kmers.pdf}
+     \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_longest_perfect_vs_length_scatter.pdf}
+\end{figure}
+\subsection*{NC 005139 coverage}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=2cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_coverage.pdf} \\
+\includegraphics[height=2cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_gc.pdf}
+\end{figure}
+\subsection*{NC 005139 5-mer analysis}
+\subsection*{Under-represented 5-mers}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{7pt}{9pt}\selectfont
+\begin{tabular}{|c|c c c c|c c c c|c c c c|}
+\cline{1-13}
+ & \multicolumn{4}{c|}{Template} & \multicolumn{4}{c|}{Complement} & \multicolumn{4}{c|}{2D} \\
+Rank & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% \\
+\cline{1-13}
+1 & ttttt & 0.279 & 0.000 & -0.279 & ttttt & 0.279 & 0.000 & -0.279 & ttttt & 0.279 & 0.000 & -0.279 \\
+2 & aaaaa & 0.278 & 0.000 & -0.278 & aaaaa & 0.278 & 0.000 & -0.278 & aaaaa & 0.278 & 0.000 & -0.278 \\
+3 & caaaa & 0.243 & 0.000 & -0.243 & caaaa & 0.243 & 0.000 & -0.243 & caaaa & 0.243 & 0.000 & -0.243 \\
+4 & ttttg & 0.237 & 0.000 & -0.237 & ttttg & 0.237 & 0.000 & -0.237 & ttttg & 0.237 & 0.000 & -0.237 \\
+5 & ttgat & 0.232 & 0.000 & -0.232 & ttgat & 0.232 & 0.000 & -0.232 & ttgat & 0.232 & 0.000 & -0.232 \\
+6 & atcaa & 0.227 & 0.000 & -0.227 & atcaa & 0.227 & 0.000 & -0.227 & atcaa & 0.227 & 0.000 & -0.227 \\
+7 & accaa & 0.226 & 0.000 & -0.226 & accaa & 0.226 & 0.000 & -0.226 & accaa & 0.226 & 0.000 & -0.226 \\
+8 & gccaa & 0.222 & 0.000 & -0.222 & gccaa & 0.222 & 0.000 & -0.222 & gccaa & 0.222 & 0.000 & -0.222 \\
+9 & ttggc & 0.215 & 0.000 & -0.215 & ttggc & 0.215 & 0.000 & -0.215 & ttggc & 0.215 & 0.000 & -0.215 \\
+10 & aaaac & 0.214 & 0.000 & -0.214 & aaaac & 0.214 & 0.000 & -0.214 & aaaac & 0.214 & 0.000 & -0.214 \\
+\cline{1-13}
+\end{tabular}
+}
+\end{table}
+\vspace{-3mm}
+\subsection*{Over-represented 5-mers}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{7pt}{9pt}\selectfont
+\begin{tabular}{|c|c c c c|c c c c|c c c c|}
+\cline{1-13}
+ & \multicolumn{4}{c|}{Template} & \multicolumn{4}{c|}{Complement} & \multicolumn{4}{c|}{2D} \\
+Rank & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% \\
+\cline{1-13}
+1 & GCGGC & 0.000 & 0.231 & 0.231 & GAGAG & 0.000 & 0.219 & 0.219 & CAGCA & 0.000 & 0.236 & 0.236 \\
+2 & TGCTG & 0.000 & 0.223 & 0.223 & GCTGC & 0.000 & 0.214 & 0.214 & TGCTG & 0.000 & 0.229 & 0.229 \\
+3 & GGCGG & 0.000 & 0.220 & 0.220 & AGAGA & 0.000 & 0.213 & 0.213 & CCAGC & 0.000 & 0.221 & 0.221 \\
+4 & CAGCA & 0.000 & 0.198 & 0.198 & TGCTG & 0.000 & 0.212 & 0.212 & GCTGG & 0.000 & 0.218 & 0.218 \\
+5 & CGGCG & 0.000 & 0.195 & 0.195 & GCGGC & 0.000 & 0.207 & 0.207 & CAGCG & 0.000 & 0.216 & 0.216 \\
+6 & CAGCG & 0.000 & 0.193 & 0.193 & TGATG & 0.000 & 0.207 & 0.207 & CGCTG & 0.000 & 0.207 & 0.207 \\
+7 & CGTCG & 0.000 & 0.191 & 0.191 & CGGCG & 0.000 & 0.199 & 0.199 & GCAGC & 0.000 & 0.206 & 0.206 \\
+8 & GCAGC & 0.000 & 0.188 & 0.188 & GGCGG & 0.000 & 0.198 & 0.198 & CTGGC & 0.000 & 0.206 & 0.206 \\
+9 & GCTGC & 0.000 & 0.187 & 0.187 & GGCTG & 0.000 & 0.194 & 0.194 & CATCA & 0.000 & 0.198 & 0.198 \\
+10 & GGCGT & 0.000 & 0.183 & 0.183 & GCTGA & 0.000 & 0.189 & 0.189 & TGCCG & 0.000 & 0.192 & 0.192 \\
+\cline{1-13}
+\end{tabular}
+}
+\end{table}
+\vspace{-8mm}
+\begin{figure}[H]
+\centering
+   \end{figure}
+\subsection*{NC 005139 GC content}
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005139/NC_005139_2D_GC_hist.pdf}
+\clearpage
+\subsection*{NC 005140 error analysis}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{9pt}{11pt}\selectfont
+\begin{tabular}{l c c c}
+ & Template & Complement & 2D \\
+Overall base identity (excluding indels) & 0.00\% & 0.00\% & 0.00\% \\
+Aligned base identity (excluding indels) & 0.00\% & 0.00\% & 0.00\% \\
+Identical bases per 100 aligned bases (including indels) & 0.00\% & 0.00\% & 0.00\% \\
+Inserted bases per 100 aligned bases (including indels) & 5.00\% & 5.53\% & 5.63\% \\
+Deleted bases per 100 aligned bases (including indels) & 11.09\% & 8.97\% & 6.60\% \\
+Substitutions per 100 aligned bases (including indels) & 83.90\% & 85.50\% & 87.77\% \\
+Mean insertion size & 1.62 & 1.58 & 1.53 \\
+Mean deletion size & 1.66 & 1.54 & 1.47 \\
+\end{tabular}
+}
+\end{table}
+\vspace{-5mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_insertions.pdf} \\
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_deletions.pdf}
+\end{figure}
+\subsection*{NC 005140 read identity}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_length_vs_identity_hist.pdf} \\
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_length_vs_identity_scatter.pdf} \\
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_read_fraction_vs_alignment_identity_scatter.pdf}
+\end{figure}
+\begin{figure}[H]
+\centering
+   \end{figure}
+\subsection*{NC 005140 perfect kmers}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_cumulative_perfect_kmers.pdf}
+     \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_longest_perfect_vs_length_scatter.pdf}
+\end{figure}
+\subsection*{NC 005140 coverage}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+  \includegraphics[height=2cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_coverage.pdf} \\
+\includegraphics[height=2cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_gc.pdf}
+\end{figure}
+\subsection*{NC 005140 5-mer analysis}
+\subsection*{Under-represented 5-mers}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{7pt}{9pt}\selectfont
+\begin{tabular}{|c|c c c c|c c c c|c c c c|}
+\cline{1-13}
+ & \multicolumn{4}{c|}{Template} & \multicolumn{4}{c|}{Complement} & \multicolumn{4}{c|}{2D} \\
+Rank & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% \\
+\cline{1-13}
+1 & ttttt & 0.264 & 0.000 & -0.264 & ttttt & 0.264 & 0.000 & -0.264 & ttttt & 0.264 & 0.000 & -0.264 \\
+2 & aaaaa & 0.261 & 0.000 & -0.261 & aaaaa & 0.261 & 0.000 & -0.261 & aaaaa & 0.261 & 0.000 & -0.261 \\
+3 & ttggc & 0.249 & 0.000 & -0.249 & ttggc & 0.249 & 0.000 & -0.249 & ttggc & 0.249 & 0.000 & -0.249 \\
+4 & gccaa & 0.245 & 0.000 & -0.245 & gccaa & 0.245 & 0.000 & -0.245 & gccaa & 0.245 & 0.000 & -0.245 \\
+5 & ttttg & 0.241 & 0.000 & -0.241 & ttttg & 0.241 & 0.000 & -0.241 & ttttg & 0.241 & 0.000 & -0.241 \\
+6 & caaaa & 0.241 & 0.000 & -0.241 & caaaa & 0.241 & 0.000 & -0.241 & caaaa & 0.241 & 0.000 & -0.241 \\
+7 & ttgat & 0.241 & 0.000 & -0.241 & ttgat & 0.241 & 0.000 & -0.241 & ttgat & 0.241 & 0.000 & -0.241 \\
+8 & atcaa & 0.237 & 0.000 & -0.237 & atcaa & 0.237 & 0.000 & -0.237 & atcaa & 0.237 & 0.000 & -0.237 \\
+9 & catca & 0.228 & 0.000 & -0.228 & catca & 0.228 & 0.000 & -0.228 & catca & 0.228 & 0.000 & -0.228 \\
+10 & cacca & 0.221 & 0.000 & -0.221 & cacca & 0.221 & 0.000 & -0.221 & cacca & 0.221 & 0.000 & -0.221 \\
+\cline{1-13}
+\end{tabular}
+}
+\end{table}
+\vspace{-3mm}
+\subsection*{Over-represented 5-mers}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{7pt}{9pt}\selectfont
+\begin{tabular}{|c|c c c c|c c c c|c c c c|}
+\cline{1-13}
+ & \multicolumn{4}{c|}{Template} & \multicolumn{4}{c|}{Complement} & \multicolumn{4}{c|}{2D} \\
+Rank & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% & kmer & Ref \% & Read \% & Diff \% \\
+\cline{1-13}
+1 & CCAGC & 0.000 & 0.359 & 0.359 & TGCTG & 0.000 & 0.312 & 0.312 & CCAGC & 0.000 & 0.280 & 0.280 \\
+2 & CAGCG & 0.000 & 0.310 & 0.310 & GCTGG & 0.000 & 0.295 & 0.295 & GCCAG & 0.000 & 0.260 & 0.260 \\
+3 & CGGGC & 0.000 & 0.277 & 0.277 & CGGCG & 0.000 & 0.266 & 0.266 & CAGCA & 0.000 & 0.254 & 0.254 \\
+4 & TTTCC & 0.000 & 0.277 & 0.277 & GGCTG & 0.000 & 0.260 & 0.260 & CGCCA & 0.000 & 0.246 & 0.246 \\
+5 & GGCGT & 0.000 & 0.261 & 0.261 & CTGGC & 0.000 & 0.243 & 0.243 & CAGCG & 0.000 & 0.244 & 0.244 \\
+6 & TGATG & 0.000 & 0.261 & 0.261 & GGCGG & 0.000 & 0.243 & 0.243 & TGCTG & 0.000 & 0.237 & 0.237 \\
+7 & GATGC & 0.000 & 0.245 & 0.245 & GCGGC & 0.000 & 0.237 & 0.237 & GCAGC & 0.000 & 0.228 & 0.228 \\
+8 & CGGCA & 0.000 & 0.245 & 0.245 & CGGCT & 0.000 & 0.220 & 0.220 & CGGCA & 0.000 & 0.207 & 0.207 \\
+9 & TTAAC & 0.000 & 0.245 & 0.245 & TGATG & 0.000 & 0.220 & 0.220 & TGCCG & 0.000 & 0.206 & 0.206 \\
+10 & TGCTT & 0.000 & 0.245 & 0.245 & GCTGA & 0.000 & 0.208 & 0.208 & TGGCG & 0.000 & 0.202 & 0.202 \\
+\cline{1-13}
+\end{tabular}
+}
+\end{table}
+\vspace{-8mm}
+\begin{figure}[H]
+\centering
+   \end{figure}
+\subsection*{NC 005140 GC content}
+  \includegraphics[height=3.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/NC_005140/NC_005140_2D_GC_hist.pdf}
+\clearpage
+\subsection*{All reference 21mer analysis}
+\vspace{-3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.3\linewidth]{/home/data/inputs/nanook/main/graphs_last_passonly/all_Template_21mers.pdf}
+\includegraphics[width=.3\linewidth]{/home/data/inputs/nanook/main/graphs_last_passonly/all_Complement_21mers.pdf}
+\includegraphics[width=.3\linewidth]{/home/data/inputs/nanook/main/graphs_last_passonly/all_2D_21mers.pdf}
+\end{figure}
+\subsection*{All reference substitutions}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{8pt}{10pt}\selectfont
+\begin{tabular}{|c c|c c c c|c c c c|c c c c|}
+\hline
+ & & \multicolumn{4}{c|}{Template substituted \%} & \multicolumn{4}{c|}{Complement substituted \%} & \multicolumn{4}{c|}{2D substituted \%} \\
+ & & a & c & g & t & a & c & g & t & a & c & g & t \\
+\hline
+\multirow{4}{*}{\rotatebox[origin=c]{90}{Reference}} & A & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN\\
+ & C & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN\\
+ & G & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN\\
+ & T & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN\\
+\hline
+\end{tabular}
+}
+\end{table}
+\subsection*{Kmer motifs before errors}
+\subsection*{3-mer error motif analysis}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{6pt}{8pt}\selectfont
+\tabcolsep=0.15cm
+\begin{tabular}{|c|c c c|c c c|c c c|c}
+\cline{1-10}
+ & \multicolumn{3}{c|}{Template} & \multicolumn{3}{c|}{Complement} & \multicolumn{3}{c|}{2D} & \\
+Rank & Insertion & Deletion & Substitution & Insertion & Deletion & Substitution & Insertion & Deletion & Substitution & \\
+\cline{1-10}
+1 & & & & & & & & & & \multirow{10}{*}{\rotatebox[origin=c]{90}{Most common}}\\
+2 & & & & & & & & &\\
+3 & & & & & & & & &\\
+4 & & & & & & & & &\\
+5 & & & & & & & & &\\
+6 & & & & & & & & &\\
+7 & & & & & & & & &\\
+8 & & & & & & & & &\\
+9 & & & & & & & & &\\
+10 & & & & & & & & &\\
+\cline{1-10}
+\rule{0pt}{0.6cm}
+  & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Template_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Template_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Template_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Complement_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Complement_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Complement_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_2D_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_2D_top_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_2D_top_k3.png} \\
+\cline{1-10}
+-10 & & & & & & & & & & \multirow{10}{*}{\rotatebox[origin=c]{90}{Least common}}\\
+-9 & & & & & & & & &\\
+-8 & & & & & & & & &\\
+-7 & & & & & & & & &\\
+-6 & & & & & & & & &\\
+-5 & & & & & & & & &\\
+-4 & & & & & & & & &\\
+-3 & & & & & & & & &\\
+-2 & & & & & & & & &\\
+-1 & & & & & & & & &\\
+\cline{1-10}
+\rule{0pt}{0.6cm}
+  & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Template_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Template_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Template_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Complement_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Complement_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Complement_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_2D_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_2D_bottom_k3.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_2D_bottom_k3.png} \\
+\cline{1-10}
+\end{tabular}
+}
+\end{table}
+\vspace{-9mm}
+{\fontsize{8}{8}\textsf{Kmer space for 3-mers: 64 \hspace{5mm} Random chance for any given 3-mer: 1.56\%}}
+\vspace{5mm}
+\subsection*{4-mer error motif analysis}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{6pt}{8pt}\selectfont
+\tabcolsep=0.15cm
+\begin{tabular}{|c|c c c|c c c|c c c|c}
+\cline{1-10}
+ & \multicolumn{3}{c|}{Template} & \multicolumn{3}{c|}{Complement} & \multicolumn{3}{c|}{2D} & \\
+Rank & Insertion & Deletion & Substitution & Insertion & Deletion & Substitution & Insertion & Deletion & Substitution & \\
+\cline{1-10}
+1 & & & & & & & & & & \multirow{10}{*}{\rotatebox[origin=c]{90}{Most common}}\\
+2 & & & & & & & & &\\
+3 & & & & & & & & &\\
+4 & & & & & & & & &\\
+5 & & & & & & & & &\\
+6 & & & & & & & & &\\
+7 & & & & & & & & &\\
+8 & & & & & & & & &\\
+9 & & & & & & & & &\\
+10 & & & & & & & & &\\
+\cline{1-10}
+\rule{0pt}{0.6cm}
+  & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Template_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Template_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Template_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Complement_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Complement_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Complement_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_2D_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_2D_top_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_2D_top_k4.png} \\
+\cline{1-10}
+-10 & & & & & & & & & & \multirow{10}{*}{\rotatebox[origin=c]{90}{Least common}}\\
+-9 & & & & & & & & &\\
+-8 & & & & & & & & &\\
+-7 & & & & & & & & &\\
+-6 & & & & & & & & &\\
+-5 & & & & & & & & &\\
+-4 & & & & & & & & &\\
+-3 & & & & & & & & &\\
+-2 & & & & & & & & &\\
+-1 & & & & & & & & &\\
+\cline{1-10}
+\rule{0pt}{0.6cm}
+  & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Template_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Template_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Template_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Complement_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Complement_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Complement_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_2D_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_2D_bottom_k4.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_2D_bottom_k4.png} \\
+\cline{1-10}
+\end{tabular}
+}
+\end{table}
+\vspace{-9mm}
+{\fontsize{8}{8}\textsf{Kmer space for 4-mers: 256 \hspace{5mm} Random chance for any given 4-mer: 0.39\%}}
+\vspace{5mm}
+\subsection*{5-mer error motif analysis}
+\vspace{-3mm}
+\begin{table}[H]
+{\footnotesize
+\fontsize{6pt}{8pt}\selectfont
+\tabcolsep=0.15cm
+\begin{tabular}{|c|c c c|c c c|c c c|c}
+\cline{1-10}
+ & \multicolumn{3}{c|}{Template} & \multicolumn{3}{c|}{Complement} & \multicolumn{3}{c|}{2D} & \\
+Rank & Insertion & Deletion & Substitution & Insertion & Deletion & Substitution & Insertion & Deletion & Substitution & \\
+\cline{1-10}
+1 & & & & & & & & & & \multirow{10}{*}{\rotatebox[origin=c]{90}{Most common}}\\
+2 & & & & & & & & &\\
+3 & & & & & & & & &\\
+4 & & & & & & & & &\\
+5 & & & & & & & & &\\
+6 & & & & & & & & &\\
+7 & & & & & & & & &\\
+8 & & & & & & & & &\\
+9 & & & & & & & & &\\
+10 & & & & & & & & &\\
+\cline{1-10}
+\rule{0pt}{0.6cm}
+  & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Template_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Template_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Template_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Complement_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Complement_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Complement_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_2D_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_2D_top_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_2D_top_k5.png} \\
+\cline{1-10}
+-10 & & & & & & & & & & \multirow{10}{*}{\rotatebox[origin=c]{90}{Least common}}\\
+-9 & & & & & & & & &\\
+-8 & & & & & & & & &\\
+-7 & & & & & & & & &\\
+-6 & & & & & & & & &\\
+-5 & & & & & & & & &\\
+-4 & & & & & & & & &\\
+-3 & & & & & & & & &\\
+-2 & & & & & & & & &\\
+-1 & & & & & & & & &\\
+\cline{1-10}
+\rule{0pt}{0.6cm}
+  & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Template_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Template_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Template_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_Complement_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_Complement_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_Complement_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_insertion_2D_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_deletion_2D_bottom_k5.png} & \includegraphics[height=0.5cm]{/home/data/inputs/nanook/main/graphs_last_passonly/motifs/logo_substitution_2D_bottom_k5.png} \\
+\cline{1-10}
+\end{tabular}
+}
+\end{table}
+\vspace{-9mm}
+{\fontsize{8}{8}\textsf{Kmer space for 5-mers: 1024 \hspace{5mm} Random chance for any given 5-mer: 0.10\%}}
+\vspace{5mm}
+\end{document}
+\end{document}

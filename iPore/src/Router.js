@@ -14,7 +14,7 @@ const RouterComponent = () => {
   const { 
     sceneStyle,
     navBar,
-    navBarTitle 
+    navBarTitle
   } = styles;
 
   return ( 
@@ -102,7 +102,7 @@ const styles = {
   },
   
   navBarTitle: {
-    color: '#007aff',
+    color: '#2876cc',
     fontSize: 22,
     fontWeight: '200'
   }

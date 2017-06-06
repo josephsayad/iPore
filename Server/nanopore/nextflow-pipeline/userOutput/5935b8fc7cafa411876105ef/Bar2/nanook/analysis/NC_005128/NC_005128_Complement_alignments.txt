@@ -1,0 +1,1 @@
+Filename	QueryName	QueryGC	QueryStart	QueryBasesCovered	QueryStrand	QueryLength	HitName	HitStart	HitBasesCovered	HitStrand	HitLength	AlignmentSize	IdenticalBases	AlignmentPercentIdentity	QueryPercentIdentity	LongestPerfectKmer	MeanPerfectKmer	PercentQueryAligned	nk15	nk17	nk19	nk21	nk23	nk25

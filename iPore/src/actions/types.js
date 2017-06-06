@@ -20,8 +20,8 @@ export const CLEAR_REGISTER_FORM = 'clear_regiser_form';
 /* User Actions */
 
 export const NAME_CHANGED = 'name_changed';
-export const FAST5_PATH_CHANGED = 'fast5_path_changed';
-export const REFERENCE_PATH_CHANGED = 'reference_path_changed';
+// export const FAST5_PATH_CHANGED = 'fast5_path_changed'; // Path is pre-defined...
+export const REFERENCE_PATH_UPDATED = 'reference_path_updated';
 export const RUN_PIPELINE = 'run_pipeline';
 export const RUN_PIPELINE_SUCCESS = 'run_pipeline_success';
 export const RUN_PIPELINE_FAIL = 'run_pipeline_fail';

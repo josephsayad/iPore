@@ -1,0 +1,26 @@
+##maf version=1
+# LAST version 756
+#
+# a=1 b=1 A=1 B=1 e=40 d=18 x=39 y=9 z=39 D=1e+06 E=95055.5
+# R=10 u=0 s=2 S=0 M=0 T=0 m=10 l=1 n=10 k=1 w=1000 t=0.910239 j=3 Q=0
+# /home/data/inputs/nanook/reference/nanook_ref
+# Reference sequences=3 normal letters=5260086
+# lambda=0.661467 K=0.0260716
+#
+#    A  C  G  T
+# A  1 -1 -1 -1
+# C -1  1 -1 -1
+# G -1 -1  1 -1
+# T -1 -1 -1  1
+#
+# Coordinates are 0-based.  For - strand matches, coordinates
+# in the reverse complement of the 2nd sequence are used.
+#
+# name start alnSize strand seqSize alignment
+#
+# batch 0
+a score=121 EG2=4.5e-19 E=1.4e-27
+s NC_005139     2584381 478 + 3354505 ttaggcggtaatta--gcgtacc--ttcagcttcacccatcaccacgcggcgcaaagcacccggcttgttcatattaaatacgcggattggcattttgtggtcacgtg--ccaatgtaaatgctgccaaatccatcactttcagttctttttcaagaacatcggtgtaagaaa---gcttatcataca-gctctgcgtctgggttg--gct--acc----gggtcagcagt-aaatacgc-catccactttagtcgcttttagaa--ctacatccgcttcaatctcaataccacgtaggcaagcagcagaatccgtagt--gaa-gaa-tg--ggttgccagtacctgcg-gcaaaaata-a-ccacgcgaccttggcgaagttcgcggatggcgtctgcccagttgtagtcatcacaa-acaccgttaagtggaattgcagacatcacgcgtgcatttacgtaagcacggtgtagcgcatc--gcgcatcgctaggcca----ttcattaccgtt
+s ch224_file104     468 494 -    1003 TTATTCCGTGATTAAAGTGTACCGCTTCT--TTCACCCATTAC-ACG--GCGCAGCGCACCCGGTTTGTTCATATTGGAAACAGGAATCGGTAATTTATGGTCACGAGCCCCAGCGTGAAGGCCGCCAGAGTGATGACTTTCAGCTC-CTTTCCAGCACTTCGCTGTAAGTCATTTGCTCGT-GTACATGGT-TGCG-CTTTGATGCATCTTCACCCCTAAGATCAGCGGTGCAACACGCTCAT-AACTTTGGT-TCTTTCATAAGGCCACATCGGCTTCAATTTC-AT--CACGCAGGCAAGCTGCTGAGTCGGTGGTAACAATGAACTGTTTGGTGTTGGTA-AGGCGCGCGTATATAGATCAACG-GTTGTTGCAGCAACAGGCTGATAGCTTCGGCCCAGCTGTAGCTGTCTCAACTCGTCATTCAATGGAATAGCGGACATCAGACGAGCGTTCAAG--GGCGCGGTGCAGTGCATCAAGAGAAT---TTGCCCACGGTTTCATTA-CGTT
+
+# Query sequences=1

@@ -1,0 +1,30 @@
+##maf version=1
+# LAST version 756
+#
+# a=1 b=1 A=1 B=1 e=40 d=18 x=39 y=9 z=39 D=1e+06 E=95055.5
+# R=10 u=0 s=2 S=0 M=0 T=0 m=10 l=1 n=10 k=1 w=1000 t=0.910239 j=3 Q=0
+# /home/data/inputs/nanook/reference/nanook_ref
+# Reference sequences=3 normal letters=5260086
+# lambda=0.661467 K=0.0260716
+#
+#    A  C  G  T
+# A  1 -1 -1 -1
+# C -1  1 -1 -1
+# G -1 -1  1 -1
+# T -1 -1 -1  1
+#
+# Coordinates are 0-based.  For - strand matches, coordinates
+# in the reverse complement of the 2nd sequence are used.
+#
+# name start alnSize strand seqSize alignment
+#
+# batch 0
+a score=127 EG2=8.6e-21 E=7.8e-29
+s NC_005139    536280 565 + 3354505 aaggaataagcatgattctcaattc-gttcaat-ct-tc-aaggtaaag--tggctatcgtaactggttgtgatactggtttagggcaaggtatggcattgggtttggctaacgcaggctgtgatatcgttggcgtaaatattgtggagccaactgagaccattgca-c-ttattgagcaaacagggcgtaagtttgttga-tgtgcgtgctaacctcatgaagcttgatgacattcctgc-c--attgttgaccgcgcagtgacag---agtttggtcgcatcgatattcttgtaaacaacgctggtatcattcgtcgcaatgacgcgattgatttctctgagcaagattgggatgacgt-aatgaatattaacgttaagtcagtgttcttcttgtctcaagcggtagcaaaacagtttattgcccagggagaaggtggcaaaatcattaatattgcttcaatgttgtctttcc-aaggtggtattcg-cgttcct-tcatacacgacatctaaaagcggcgtaatgggtgtaactcgtctaatggcaaatgaatgggcgaaacacaatatcaacgttaatgc
+s ch455_file74    765 553 +    1614 AACGAATAAGTAGCTTTATGATTTAAGTGCATTTCTCTCGAAGGTAAAGGATTGAGGTCGTCACTGGTTGTGATACTGATG--GGGTCAGGGATGGCGTTGGGGCTGGCGCAAGC-GGCTGTGACATTGTTGGCATTAA-AGCGTTGAACCGACTGA-ACCATCGGAGCATTACAGCGCTG---GGGCGTC-GTTTTAAGCCTGACCCCCGTAACTGC--GAAGATTGATGGTATTCCAGCACTGATAGCTGATCGCGC-GCGGTAGGCCAG-TTGGTCATATTGATATCCTGGTGAATAACGCCGGATTGATTCGCCGCGAAGATGCTCTCGAGTTCAGCGAAATAGAAT-GGACGATGTCACTGAACCTGAATATCAAGAGCGTATTCTTC-AGTGCCAGGCAGCGGC-GAACA-TTGGACGCGCAAGGCAATGGCGGC--AATTATCAATACCTCGTCAATGCTCTCCTGCCGAGGGCGGGATCGGTCGTGCCTGGGGTAC-CG-CATCAAAAAGCGGGGGATTAGCCTTGACGCGATTGATG--AACCGAAAGG----AACCCACTA--AAC--TAAGGC
+
+a score=142 EG2=4.2e-25 E=3.4e-33
+s NC_005140    1762819 774 + 1857073 acgggctaa-c-caaccaccatcaacagcgatggtgtaaccatt-gac-ata--gtcagaagcggacgatgcca-ag-aacacgacagggcctgcaagatcactgggcaatccccaacgctgc--gccggaatgcgttctaaaatcgcttgattgcgttcagcat-cggctctgagcgctgccgtgtt--attggtggccatata-gcctggagcaatggcattg-acattgatcccct-gtg-a-tgc---ccactcgttagccagcaaacgagtgatgccca-tcacagcacttttcgacgcggtatacgagggaacacgaatgccgcctt-gaaacgagagcatcgacgcgatgttgatgatcttgccgccagactgc--tgcgcttgaaactggcgagccaccgcttgagctaagaagaacacgctcttggcattgaggttca-tgacgtcatcccaatcttgctcactgaagttgatcgcatcgtcacgacggat-aatgcccgcgttgttgaccagaatatcgatgcgtcccgcttgggtaac-cgcacgatcaacga-c-g-gatgcaatcaca-gaggcatcactgagatccgccacaatc-gagtaaaaacggcggcctgtggcttctattaatgc-ggga-gtttcatccggtccagcgtaattcacaccgacaatgtcacaacccgcttgcgccagcgccactgccatgccttgaccaagaccggtattgcaccctgtgacaagcgcca-cc-ttaccgtctaaattgaacgcctctaaaatcatta---ttcct-ttcctttt
+s ch455_file74      69 782 -    1614 ACGGGCCACGCTCAAATGCTATCCACGGCAATGGTATAACCATTTGACTACACCGCCTTATGGGCTAAATGGCAGAGGAACACTATCGGCGATATAAG-T-ACTCGGCA-TCGCGCACGTAACCAGCTCGACGGC-TGAGAACTGCGGGGGTCAGAGTCCACCTCACGTGTCT-ATCT-TGACATGTTGTATAGCTCTTAATCTAAGTCTGGCCGACTC-CAAGGCACATTAAGGCCTTAGTTTAGTGGGTTCCTTTCGGTT--CATCAATCGCGTCAAGGCTAATCCCC-CGCTTTTTGATGCGGTACCCCAGGCACGACCGATCCCGCCCTCGGCAGGAGAGCATTGACGAGGTATTGATAAT--TGCCGCCAT--TGCCTTGCGCGTCCAA-TGTTC-GCCGCTGCCTG-GCACTGAAGAATACGCTCTTGATATTCAGGTTCAGTGACATCGT-CCATTCTATTTCGCTGAACTCGAGAGCATCTTCGCGGCGAATCAAT-CCGGCGTTATTCACCAGGATATCAATATGACCAACTGGCCTACCGCGCGCGATCAGCTATCAGTGCTGGAATACCATCAATCTTCGC--AGTTACG--GGGGTCAGGCTTAAAACGACGCCC--CAGC-GCT-GTAATGCTCCGATGGTTCAGTCGGTTCAACG-CTTTAATGCCAACAATGTCAC-AGCCGCTTGCGCCAGCCCCAACGCCAT-CCCTGACC-CCATCAGTATCACAACCAGTGACGACCTCAATCCTTTACCTTCGAGA--GAAATGCACTTAAATCATAAAGCTACTTATTCGTTTT
+
+# Query sequences=1

@@ -7,3 +7,4 @@ export * from './Input';
 export * from './Spinner';
 export * from './FooterWithNativeBase';
 export * from './SideMenu';
+export * from './SearchBar';

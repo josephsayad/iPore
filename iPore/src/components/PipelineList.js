@@ -42,7 +42,7 @@ class PipelineList extends Component {
         enableEmptySections
         dataSource={this.dataSource}
         renderRow={this.renderRow}
-        style={{ paddingTop: 6, borderColor: '#1c528e' }}
+        style={{ borderColor: '#1c528e', paddingTop: 6 }}
       />
     );
   }

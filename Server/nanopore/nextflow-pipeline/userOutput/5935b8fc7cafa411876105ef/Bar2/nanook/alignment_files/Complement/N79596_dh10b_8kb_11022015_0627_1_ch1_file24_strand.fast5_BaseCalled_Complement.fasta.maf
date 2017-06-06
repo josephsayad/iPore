@@ -1,0 +1,25 @@
+# LAST version 756
+#
+# a=1 b=1 A=1 B=1 e=40 d=18 x=39 y=9 z=39 D=1e+06 E=95055.5
+# R=10 u=0 s=2 S=0 M=0 T=0 m=10 l=1 n=10 k=1 w=1000 t=0.910239 j=3 Q=0
+# /home/data/inputs/nanook/reference/nanook_ref
+# Reference sequences=3 normal letters=5260086
+# lambda=0.661467 K=0.0260716
+#
+#    A  C  G  T
+# A  1 -1 -1 -1
+# C -1  1 -1 -1
+# G -1 -1  1 -1
+# T -1 -1 -1  1
+#
+# Coordinates are 0-based.  For - strand matches, coordinates
+# in the reverse complement of the 2nd sequence are used.
+#
+# name start alnSize strand seqSize alignment
+#
+# batch 0
+a score=47 EG2=8.2e+02 E=0.0001
+s NC_005139  904940 1037 + 3354505 gaaccatgcgtacaatgtcgatttcgccgagctctttgtacagc-gtttcaacctgctcgata-gaggtggcagtgatgt--tgatagaaaccgagtgatagttaccttttgc-actag-gttttactgcagggctgtaat-ctccaggagcatggc-gctgaatcacttccaacactttctctggcagttcaggttttgcgtaacccattacct-tgtatgtaaatgaacaagggaactcaagaagatctttcagtttggcatcagagttgatggtgagcattgaggataactccagttagatattcggttatgcggggcgcaatagtaa-cgtctgttttatgtga-actcaagtacaacaaagccgccaaattggcggctttaggctaacagtc-tgtt--ttgaaattagaacag-gctcttaaatagcagtactagataatcccaaagacg----gctgaataggctgccttcatcaaccgact-caagagccagtagtgggtactgagccacatcttcaccatcgacttggtagtaaagct-tac-caa--cc-ac-atcgcctttcttaatcggagc-tt--gaagtt-ct-ttttcaagtacaaaactggc-ggtgaggtttttc-gcttgaccacgaggtaacgtgacgtaagtgtcttcattaacacccaatgctag-g-gtgtctttg-ttacccatccagattttttcttcgacgaaagtttcaccggctttgtgcggcgcaacggtttcgaagaaacggaagccgtaactcagaagtttcttactttctgacttacgtgcgttcatgtctttggtgcccatgacgacagcgataagacgcatcttaccttcagtggcagaa-cttactaggctgtaacctgcattgcttgtgtggcccgttttgatgccatccacattcatgcttttatcccacaacagaccgttacggttgt-a-ctgggtaatgccgttgtaagtaaatttttgctctgagtagatacggtattcatccg--gcacatcacggatcaatgcttgaccaaggagcg--c--catgtcgtacggcgttg
+s ch1_file24  10755  946 +   12018 GAACCATGCGGACAATATC-ATTTAG---AT-TCTTCG-ACCGATGTTTCCTCCTGC-C-ATCTGAG-TGAGAGTTCGGTAATGATAGAACCCCAGTGGTAATTGCC-TTTGCTGCTTGTGATTTACCGTTGGGATGTAGTACT-GGCGAG-ATGGCAGGTGA--CGGT--CAAC-CTAGGTCAACCAGCTCAGGTAGACGGTATTGC---GCCTCTGT-TGTAGGTG-ACATAG--AGT-GGGGAG-TTGGGCGGTTT--CGTTAAATTTGGT-GTTTTCCTTCA----AGCTCCCG-GCG-TAAT---TAAAAC-GAACCCCCT-GCAAGCG-GAATTTTA-CTGATGCT-TAGGATA--TGGGACG-GAAATT----AC-TTCGG-T--CATTCATGTTAATTTATA-CAAACCAGTGATGGAACATGCCTTTACT---TAAT--CAATGAGGTTTTGCCGGA-AATCTACCTTC--CGGGATTCTGCACAACCGGGGCGTTGCTCCTCAGTAGCGTTTTTAACATCAAGCTGGAATT---GCTCTACGTAATTCCGACGACCGGC-TTCTT--GCGGCGCATTGCGAAGTTACTGCTGTC-AGCGC-TAGCTGGCTTCTCGGGTGGTTCTGC-TG--CAAGCCGGATGGT--CATA--CGTCTTTACT--CTCCCAACG-AAGCGCGTGCAGGAGATCACCAAACGA-ACCAGTTC--AGA-GAAACCTTTA-CTACTTT-CGTGG-GTATAGGTTTC--CGGAACGGAAGCCG-AA-TC---AGTTTGGT--TTTCAGCTTTA--AGCTTTAA---AATGGGT-CCTA-GA--TTGGGGAGTAG-CGC-TCT--CATTCAGGGCCGGAAGCATA--AGATTG--ACCTGC-TTGTCAATGTGTCCC-TTTTGATG-CGT-CAGATTC-GGCTGTTA---CAGCTCA-TCGGTTACGG-AGTCAGCTGGCGAAT-ACGTT---AGTAAATTCTT-CT-T---TACGGCCAGTATCCTTCGGTCGGTCGTCACGGGTC--GGCTT-AGCATGGGCCGGTCAGCATATCGCGCGGAGCTG
+
+# Query sequences=1

@@ -17,7 +17,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <View style={styles.viewStyles}>
+      <View style={styles.viewStyle}>
         <PipelineList />
         <View>
           <FooterWithNativeBase 
@@ -37,7 +37,7 @@ const mapStateToProps = ({ auth }) => {
 };
 
 const styles = {
-  viewStyles: {
+  viewStyle: {
     flex: 1, 
     flexDirection: 'column', 
     justifyContent: 'space-between'

@@ -1,0 +1,18 @@
+
+Template alignments
+
+Num reads: 500
+Num reads with alignments: 471
+Num reads without alignments: 29
+
+Complement alignments
+
+Num reads: 500
+Num reads with alignments: 479
+Num reads without alignments: 21
+
+2D alignments
+
+Num reads: 500
+Num reads with alignments: 486
+Num reads without alignments: 14

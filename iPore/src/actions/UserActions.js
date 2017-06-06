@@ -2,15 +2,14 @@ import { Actions } from 'react-native-router-flux';
 import pipeline from './async/pipeline';
 import { 
   NAME_CHANGED,
-  FAST5_PATH_CHANGED,
-  REFERENCE_PATH_CHANGED,
+  // FAST5_PATH_CHANGED,
+  REFERENCE_PATH_UPDATED,
   RUN_PIPELINE,
   RUN_PIPELINE_FAIL,
   RUN_PIPELINE_SUCCESS,
   CLEAR_PIPELINERUN_CREATE,
   FETCH_PIPELINES_SUCCESS,
   SELECT_INSTANCE,
-  CLEAR_SELECT,
   DISPLAY_PORETOOLS_OUTPUT,
   DISPLAY_MAFTOOLS_OUTPUT
 } from './types';
@@ -22,17 +21,17 @@ export const nameChanged = (text) => {
   };
 };
 
-export const fast5PathChanged = (text) => {
-  return {
-    type: FAST5_PATH_CHANGED,
-    payload: text
-  };
-};
+// export const fast5PathChanged = (text) => {
+//   return {
+//     type: FAST5_PATH_CHANGED,
+//     payload: text
+//   };
+// }; // Path is pre-defined...
 
-export const referencePathChanged = (text) => {
+export const referencePathUpdated = ({ prop, value }) => {
   return {
-    type: REFERENCE_PATH_CHANGED,
-    payload: text
+    type: REFERENCE_PATH_UPDATED,
+    payload: { prop, value }
   };
 };
 

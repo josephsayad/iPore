@@ -13,7 +13,7 @@ pathToNextflowScript=$pathToPipeline'/scripts/main.nf';
 
 userID=$1;
 pipelineName=$2;
-fast5Path=$3;
+fast5Path=$3; # files to be placed in NanoporeSeq/Server/FAST5/
 referenceFilePath=$4; # assuming there is one reference file.
 
 echo "";
@@ -67,7 +67,7 @@ echo "}" >> $pathToNextflowConfig;
 
 # Run Nanopore Seq Pipeline.
 
-sudo nextflow run $pathToNextflowScript;
+nextflow run $pathToNextflowScript;
 
 # Clean-up nextflow work directory, logs, reference file, and config file.
 

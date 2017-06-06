@@ -1,0 +1,50 @@
+##maf version=1
+# LAST version 756
+#
+# a=1 b=1 A=1 B=1 e=40 d=18 x=39 y=9 z=39 D=1e+06 E=95055.5
+# R=10 u=0 s=2 S=0 M=0 T=0 m=10 l=1 n=10 k=1 w=1000 t=0.910239 j=3 Q=0
+# /home/data/inputs/nanook/reference/nanook_ref
+# Reference sequences=3 normal letters=5260086
+# lambda=0.661467 K=0.0260716
+#
+#    A  C  G  T
+# A  1 -1 -1 -1
+# C -1  1 -1 -1
+# G -1 -1  1 -1
+# T -1 -1 -1  1
+#
+# Coordinates are 0-based.  For - strand matches, coordinates
+# in the reverse complement of the 2nd sequence are used.
+#
+# name start alnSize strand seqSize alignment
+#
+# batch 0
+a score=298 EG2=6.4e-70 E=4.8e-78
+s NC_005139    1004103 1161 + 3354505 cactgctcgacc-tgacgggtcaatacagtttttaaaggattcgtcccattcaatcgctttagcggacgaa-caagccactgatggaccgccagg-gacacattctgcagccgatggcagtgggaacaactcttcgaaaatttcgcggtatacatagccttcttttgttg---ttggcgtgttgtatgggaagcggaattttgcggcttccatctgttgatcggttactttctcttctgccactgctttgagtgtgtcgatccagccataacccacgccatcagagaactgctctttttgacgccaagcaatagagt-ctggtaggta--gtgctcaaagcactcacgaagaatgtgtttctccattttgccgttgccacacattttatccgc-agggttcaagcgcattgcaacatcgataaactctttatccaagaatgg--cactcggccttcaaccccccaagccgccagcgatttgtttgcgcgagcacagtca-a-acatgttgagcgcaagcagtttacgtactgtctcttcgtggaactcttgtgcgttgggggctttgtggaagtagaggtaaccgccaaaaatctcgtcagccccttcaccagaaagtaccatctt-gatgc-ccatggctttg-atc--ttacgt-cccatcaag-tacattggtgttgacgcgcgga-tggtcgtgacatcgtatgtttcgatgtggtaaatcacatcacgaattgcgtccaagccttcttgaatggtgtacgt--catttcatggtgcactgtgccaattttcgccgccacttcacgggctgctttcagat--caggagcgccgtcaagaccaatagcaaatgagtgaagctgtggccaccaggcttcagtttgttcgtcgtcttcaatacgcattgcggcataacgtttagcaaccgcagaggtaatggaagaatcaagtccacctg-acagtaatacaccgtaaggcacatctgtcatcaactgacgtttcaccgccgcttcaagcg-ctg-c-tgttagttcctctttgctgctggtgttgccctgtaccgctgcgtattcattccagtcgcgaatg-tagtaacgttgaggacctgcatcg-gt-tgagct-gtagtagctacctggaggaaattcactgatggttttgcaaacgggaaccaacgctttcatttctga
+s ch19_file194    1368 1128 +    2498 CAC-GCGCGACCGTAACG--TCAAC-CATTTCTTGAACGCTTCATCCCATTCGATCGGTTCAGCGGAAGAAGCCATCGAC-GAAGGAA-GCCCGGCGGCACGGCACCCCGC-GCTCGAAGCGGGAATAGTTCTGGTCAAAT--C-CGATACA-ATACGCTTCTTTAGTAGAGGTTGGCGTGTT--ACGGGAAT-GGAATCGGGCAGTTTCCAGTTGCTGATTGAA-ACCTGCTGCGCAGCCACTTCTTC-AGGGTGTCGATCCAACTGTAACCGACGCCATCGGAGAACTGCTCTTTCTGCCGCC-AGCCACGGATTGCAGGCAGATAACGGATTCAAAAGATTCACGCAG--TGAGATGTTCCA-TTTGCCGTT-ACGCACATTTTATCCTCTTGGGTTAATACGCAT--CAGC--CAATAAGGAATTTGTCGAGGAACGGATGACGCGTGCTTCA----CGCAGGCTGACATCGCTTTGTTGGCACGCCTACAGTCAGATACAT-ATGCGAGCCAGCAG-TTACGCACCGTCTCTTCATGCAGTTCTTTGGCATTCGGTGCTT--TGGAAGTA-AATAAACCGCCGAACACTTCATCAGAACCTTCACCGGACAGCACCATTTTAAATGCTCCAT-TCTGCGTATCCGCGAATTAGACATAAAGATAC---GGTGTTGAAGCGCGAAGTGG-GGTCACATCATAAGTTTCGA--TGGTAAATCACGTCGCGGATGGCATCCAGACCTTCCTGTACAGTG-AAGTAGAATTTCGTGATGCACCGTGCCCAGATGGTTTGCCACTTCCTGGGCTGCTTTCAGGTTACCGTAAC-CCGGC-ATACCTACAGCAAAGGAGTGTAAATGCGGCTGAGA-GC--CAG--CGTTC-TGATCTTCCACGCGACGGGCTGCGTATTTCTTGGTGATAGAACA-TTAA--G--GAATCCA--ACACCAGAAGCGCAGCACACCGTAAGG--CATGAGACATCAGATGGCTTTTAACTGAATCTTCCAGTGCCTGACGCGAAAGCTCGT-TTTG-T-CGTACGTT-ATCTTTCACGCATCG-A-TCGAACCAGTCGCGAGTGATAGTAAGGAACGGGATTTTCGCCGTCTCTG-GCTCCAAATAGCT-CCCGCCGGGAACTCTTTAATCGTGCGGCAAACTGGGAGCAGCCCCTTCATTTCTGA
+
+a score=116 EG2=1.2e-17 E=2.4e-25
+s NC_005139    924181 813 + 3354505 ggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctacagc-tgacagcttac--gctatcggtttctgaaca--ttgctcagaa-acgtaaataatggtgcggaaggagagactc-gaactctca--caccttgcggc-gcc-ag-aa---cctaaatctggtgcgtctacca-atttcgccacttccgcattatttattcctaaaaactctcaatgaagagaatgtttaggaatgg-tggctacgacgggattcgaacctgtgaccccatcattatgagtgatgtgctctaaccagctgagctacgtagc-cacaacaatt-t---atgg-tgcggaaggagagactcgaactctcacacctcgcggcgccagaacctaaatctggtgcgtctaccaatttcgccacttccgcataaattgtctgctaattaagataatcatctcaatagctaaatagtggcaggtctacctggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctgcagttgatagctttcactatccgtttctaatcatcgactagaaacttaaataat-aatggtgcggaaggagagactcgaactctcacaccttgcggcgccagaacctaaatctggtgcgtcta---ccaattt-cgccacttccgcattttattcctaaaaactctcaatgaagagaatgtttaggaatggtggctacgacgggattcgaacctgtgaccccatcattatgagt-gatgtgctctaaccagctgagcta--cgtagccatcttttggagcgag
+s ch19_file194    276 714 +    2498 GGATTCGAACT--GGAATGCCGA-ATCAGAATCCGGT-CCTTACCGCTTGGCGATACCCCAACTCTATG-CA-CTTACAAGGTAAGCGTCT-TGAATAAATTGGGTACTATACCCACTCGAAGC-GCGGAATGCCGGTATAAGAATTAAGAATCCCCATGCGGAAGCCGAGGAAGAGCCCAA--C-GGCGAGAGGAAAAGATTTTGGCG-TGCCGAAC-AT--ATTCGATGATACATTCA--GAA-------TTT-GG--TGGCTGGG-ACGACG--ATTCGAACCTGT-AGATCATCATTATGAGTGATGTGCGG--ACCAACTGAGCTACGG-GCTCAGATTGTTTCTTCAATGGCTGGGGTACCTG-GATTCGAAC-CAGGGAAAT-GC--CG---GTATC-AAATGAG-TCC-T-TACCGCCTTGGATAC--CCCAATAAACCCTTAGCGG-TGAACCGCTT-A-CTCGA-AGA-AGATACTGGCTA-TCTA--TGGATTCCAACCAGGGAATGCCGGTATCAAATCTAG-T-CCTTACCGCTT------AGA----------ATACC---C-C-ATCCGTG----ATCA-CAAC--G---CTTTC-TGGTGAATGGTGCGGGGAGCGAGACTTGAACGC--AAGCCT--CCTTGCCAGAACCGTAA-CTG---CGTCTCGCCCCAATTTTCGCCACT-CCGCAT------CGTAAATAC-------------------------TGGTGGCTACGACGGGATTCGAACCTTAGAGATCATCATTATGAGTACTTGTGCTCTAACCAACTGAGCTAACCGTAGCCATCTTTTCGCGAGAG
+
+a score=98 EG2=1.8e-12 E=3.7e-20
+s NC_005139    924657 685 + 3354505 ggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctgcagt-tgatagctttcac--tatccgtttctaatcatcgactagaaact-taaataataatggtgcggaaggagagactc-gaactctca--caccttgcggc-gcc-ag-aa---cctaaatctggtgcgtctacca-atttcgccacttccgcattttattcctaaaaactctcaatgaagagaatgtttaggaatgg-tggctacgacgggattcgaacctgtgaccccatcattatgagtgatgtgctctaaccagctgagctacgtagc-ca-------tctt---t---tggag--c---ga---ga-c-----aa-------tat-aact-attctctctctcagtgacaacccc--t------tta----tgaaaggttttcacttaaatagttggcaggtctacct--ggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacc-tgc-tga--a-aac------------atggtgcggaaggagagactcgaactctcacacctcgcggcgccagaacctaaatctggtgcgtcta---ccaattt-cgccacttccgcaactattcctaataactctttgaaaaagttcttagggatggtggctacgacgggattcgaacctgtgaccccatcattatgagt-gatgtgctctaaccagctgagcta--cgtagcca
+s ch19_file194    276 700 +    2498 GGATTCGAACT--GGAATGCCGA-ATCAGAATCCGGT-CCTTACCGCTTGGCGATACCCCAACTCTATGC-A-CTTACAAGGTAAGCGTCTTGAATAA---ATTGGGTACTATACCCACTCGAAGCGCGGAATGCCGGTATAAGAATTAAGAATCCCCATGCGGAAGCCGAGGAAGAGCCCAA--C-GGCGAGAGGAAAAGATTTTGGCG-TGCCGAACAT-ATTCGATGATACATTCA--GAA-------TTT-GG--TGGCTGGG-ACGACG--ATTCGAACCTGT-AGATCATCATTATGAGTGATGTGCGG--ACCAACTGAGCTACGG-GCTCAGATTGTTTCTTCAATGGCTGGGGTACCTGGATTCGAACCAGGGAAATGCCGGTATCAAATGAGTCCTTACCGCCTTGGATACCCCAATAAACCCTTAGCGGTGAACCGCTTACTCGAAGA-AGATA-CTGG-CTATCTATGGATTCCAACCAGGGAATGCCGGTATCAAATCTAG-T-CCTTACCGCTTAGA-ATACCCCATCCGTGATCACAACGCTTTCTGGTGAATGGTGCGGGGAGCGAGACTTGAACGC--AAGCCTC-CTT-GCCAGAACCGTAA-CTG---CGTCTCGCCCCAATTTTCGCCACT-CCGCA-----TCGTAAATAC----------------------TGGTGGCTACGACGGGATTCGAACCTTAGAGATCATCATTATGAGTACTTGTGCTCTAACCAACTGAGCTAACCGTAGCCA
+
+a score=75 EG2=7.4e-06 E=1.6e-13
+s NC_005139    924163 371 + 3354505 atagtggcaggtctacctggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctacagctgacagcttacgctatcggtttctgaacattgctcagaaacgtaaataatggtgcggaaggagagactcgaactctcacaccttgcggcgccagaacctaaatctggtgcgtcta---ccaattt-cgccacttccgcattatttattcctaaaaactctcaatgaagagaatgtttaggaatggtggctacgacgggattcgaacctgtgaccccatcattatgagt-gatgtgctctaaccagctgagcta--cgtagccacaacaatttatggtgcggaa-ggagagactcg
+s ch19_file194    704 301 +    2498 ATACTGGCTA-TCTA--TGGATTCCAACCAGGGAATGCCGGTATCAAATCTAG-T-CCTTACCGCTTAGA-ATACCCCATCCG-TGA----TCAC---AACGCTTTCTGG----TG---------------AATGGTGCGGGGAGCGAGACTTGAACGC--AAGCCT--CCTTGCCAGAACCGTAA-CTG---CGTCTCGCCCCAATTTTCGCCACT-CCGCAT--------CGTAAATAC-------------------------TGGTGGCTACGACGGGATTCGAACCTTAGAGATCATCATTATGAGTACTTGTGCTCTAACCAACTGAGCTAACCGTAGC--CATC-TTTTCGCGAGAGGAAGGGAGAGCCGCG
+
+a score=46 EG2=1.6e+03 E=3.7e-05
+s NC_005139    923626 241 + 3354505 aacgtcttaatagct-aa-atagtggcaggtctacctggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctgcagatgacagcattgctatcgtgttttctaagtcattgcttagaattcaaatcgatggtgcggaaggagagactcgaactctcacacctcgcggcgccagaacctaaatctggtgcgtct---accaa-tttcgccacttccgcatcg
+s ch19_file194    685 203 +    2498 AACCGCTTACTCGAAGAAGATACTGGCTA-TCTA--TGGATTCCAACCAGGGAATGCCGGTATC-AAATCTAGT-CCTTACCGCT------TAGA-------AT-ACCCCAT--C---CGTG--ATC--A--CAACGCT-----TTCTGGTGAATGGTGCGGGGAGCGAGACTTGAA--CGCAAGCCTC-C-TTGCCAGAACCGTAA-C---TGCGTCTCGCCCCAATTTTCGCCAC-TCCGCATCG
+
+a score=45 EG2=3.1e+03 E=7.3e-05
+s NC_005139    925070 266 + 3354505 ggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctgctgaa---a---acatggt--gcggaaggag-agactcga-actct-cacac-ct---cgcggc--gcc------agaaccta-aatctgg-tgcgtctacc----aatttcgccacttcc----gcaactatt--------cctaata-actctttgaaaaagttcttagggatggtggctacgacgg-gattcgaacctgtgaccccatcattatgagtgatgtgctctaaccagctgagctacg
+s ch19_file194    276 300 +    2498 GGATTCGAACT--GGAATGCCGA-ATCAGAATCCGGT-CCTTACCGCTTGGCGATACCCCAACTCTATGCACTTACAAGGTAAGCGTCTTGAATAAATTGGGTACTATACCCACTCGAAGCGCGGAATGCCGGTATAAGAATTAAGAATCCCCATGCGGAAGCCGAGGAAGAGCCCAACGGCGAGAGGAAAAGATTTTGGCGTGCCGAACATATTCGATGATACA-TTCAGAATT-TGGTGGCTGGGACGACGATTCGAACCTGT-AGATCATCATTATGAGTGATGTGC--GGACCAACTGAGCTACG
+
+a score=44 EG2=6e+03 E=0.00014
+s NC_005139    923892 235 + 3354505 cttaataacgaatgagtggcaggtctacct--ggattcgaaccagggaatggcggcatcaaaagccgctgccttaccgcttggcgatagacctgcagatgacagctttgctatcgttttctaagtgttcgcttagaaaagaaattcgatggtgcggaaggagagactcgaactctcacacctcgcggcgccagaacctaaatctggtgcgtct---accaa-tttcgccacttccgcatcg
+s ch19_file194    690 198 +    2498 CTTACT--CGAAGAAGATACTGG-CTATCTATGGATTCCAACCAGGGAATGCCGGTATC-AAATCTAGT-CCTTACCGCTTAG-AATACCCCATCCG-TGA-----TCAC-AACGCTTTCT--G-GT------------GA------ATGGTGCGGGGAGCGAGACTTGAA--CGCAAGCCTC-C-TTGCCAGAACCGTAA-C---TGCGTCTCGCCCCAATTTTCGCCAC-TCCGCATCG
+
+# Query sequences=1

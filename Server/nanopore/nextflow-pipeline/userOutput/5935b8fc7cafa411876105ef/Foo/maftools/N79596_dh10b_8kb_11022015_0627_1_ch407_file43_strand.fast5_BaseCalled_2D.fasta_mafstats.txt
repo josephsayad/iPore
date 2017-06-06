@@ -1,0 +1,29 @@
+/home/data/inputs/maftools/pass/2D/N79596_dh10b_8kb_11022015_0627_1_ch407_file43_strand.fast5_BaseCalled_2D.fasta.maf
+------------------------------
+File size:                53.00 KB
+Lines:                          82
+Header lines:                   21
+s lines:                        30
+e lines:                         0
+i lines:                         0
+q lines:                         0
+Blank lines:                    30
+Comment lines:                   1
+
+Sequence chars:              49191 ( 95.55%)
+Gap chars:                    2289 (  4.45%)
+Columns:                     25740
+
+Blocks:                         15
+Ave block area:            3432.00
+Max block area:              15626
+Total block area:            51480
+Ave block degree:             2.00
+Max block degree:                2
+Ave seq field length:      1639.70
+Max seq field length:         7813
+
+2 unique sequences, ordered by # bases present:
+             ch407_file43:        24768 ( 50.35%)
+gi|170079663|ref|NC_010473.1|:        24423 ( 49.65%)
+                    total:        49191 (100.00%)
