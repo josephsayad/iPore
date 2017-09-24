@@ -10,14 +10,17 @@ docker pull josephsayad/ipore:poretools
 docker pull josephsayad/ipore:nanook
 docker pull josephsayad/ipore:maftools
 
-# Start MongoDB and SimpleHTTPServer
+# Install nodemon, and services.
 
 npm install -g nodemon
 brew tap gapple/services
 
+# Start MongoDB and SimpleHTTPServer
+# if already started, run: brew services restart mongodb
+
 osascript -e 'tell app "Terminal" to do script "
   brew services start mongodb
-"'
+"' 
 
 mkdir -p $pipeline $userOutput
-cd $userOutput && python -m SimpleHTTPServer 3001
+cd $userOutput && python2 -m SimpleHTTPServer 3001

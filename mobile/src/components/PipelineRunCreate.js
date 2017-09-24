@@ -66,7 +66,7 @@ class PipelineRunCreate extends Component {
         <CardSection>
           <View style={fast5ContainerStyle}>
             <Text style={labelStyle}>FAST5</Text>
-            <Text style={pathStyle}>iPore/server/FAST5</Text>
+            <Text style={pathStyle}>iPore/node-server/FAST5</Text>
           </View>
         </CardSection>
 

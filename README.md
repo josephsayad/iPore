@@ -12,7 +12,7 @@ A React Native mobile application used to work with nanopore sequencing data fro
 * [React Native (0.42.0)](https://facebook.github.io/react-native/docs/getting-started.html)
 * [MongoDB](https://treehouse.github.io/installation-guides/mac/mongo-mac.html/)
 * [Docker](https://www.docker.com/docker-mac/)
-* [Python](http://docs.python-guide.org/en/latest/starting/install/osx/)
+* [Python 2](http://docs.python-guide.org/en/latest/starting/install/osx/)
 
 ## Execution structure
 
@@ -24,32 +24,32 @@ cd iPore/mobile/ && npm install
 cd ../node-server/ && npm install
 ```
 
-Next, **run exe.bash**. This script will pull 3 Docker images from Docker Hub, start MongoDB, and start an http server on port 3001: 
+Next, **run exe.bash**. This script will pull 3 Docker images from Docker Hub, start MongoDB, and start a HTTP server on localhost port 3001: 
 
 ```
 cd ../ && bash exe.bash
 ```
 
-In another terminal window, **run nodemon**: 
+In another terminal window, **run nodemon** (it will restart the node server on localhost port 3000 if changes are made): 
 
 ```
-cd iPore/node-server/ && sudo nodemon
+cd node-server/ && sudo nodemon
 ```
 
-In another terminal window, **run the React Native application**: 
+In another terminal window, **run the React Native app**: 
 
 ```
-cd iPore/mobile/ && react-native run-ios
+cd mobile/ && react-native run-ios
 ```
 
 ## Functionality
 
-After successfully running the React Native application, you can take the following actions: 
+After successfully running the React Native app, you can take the following actions: 
 
 1. Registering a User: This adds you to the userschema collection in mongoDB. 
 2. Authenticating a User: After your password is authenticated with the bcryptjs module, you are routed to the iPore dashboard. 
 3. Pipeline create: You can run the pipeline and processes test data available in the FAST5 directory. To run your own test data through the bioinformatics pipeline, remove the test data, and add your own FAST5 data in this directory. You can choose to index 1 out of 9 bacterial reference genomes in the pipeline create scene.
-4. PipeListItem view: You can view the results of the pipeline on the application by pressing on the list items added (with a given run ID) to the dashboard. You will need to refresh the app after the pipeline is complete (check terminal running nodemon for completion status). 
+4. PipeListItem view: You can view the results of the pipeline on the application by pressing on the list items added (with a given run ID) to the dashboard. You will need to refresh the app after the pipeline is complete (check the terminal window running nodemon for completion status). 
 
 ## Upcoming updates 
 
