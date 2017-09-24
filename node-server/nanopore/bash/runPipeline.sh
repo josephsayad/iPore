@@ -3,12 +3,12 @@
 # Setup directory paths
 
 currDir=$(pwd)
-server=${currDir%/nanopore/bash}
-nanopore=$server'/nanopore'
-pipeline=$server'/nanopore/pipeline'
+nodeServer=${currDir%/nanopore/bash}
+nanopore=$nodeServer'/nanopore'
+pipeline=$nodeServer'/nanopore/pipeline'
 jobsWorking=$pipeline'/jobs-working'
 referenceDir=$jobsWorking/'inputs/nanook/reference'
-inputDataset=$server'/FAST5'
+inputDataset=$nodeServer'/FAST5'
 
 # Set arguments of script to variables
 
@@ -19,7 +19,7 @@ referenceFilePath=$4
 
 # Set up internal jobs working directories & user-picked reference file
 
-mkdir -p $jobsWorking'/inputs' $jobsWorking'/outputs'
+mkdir -p $pipeline $jobsWorking $jobsWorking'/inputs' $jobsWorking'/outputs'
 mkdir -p $jobsWorking'/inputs/poretools' $jobsWorking'/outputs/poretools'
 mkdir -p $jobsWorking'/inputs/nanook' $jobsWorking'/outputs/nanook'
 mkdir -p $jobsWorking'/inputs/nanook/main' $jobsWorking'/inputs/nanook/main/fast5' $jobsWorking'/inputs/nanook/reference'
