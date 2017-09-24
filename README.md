@@ -2,13 +2,13 @@
 
 [![Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]() [![React Native](https://img.shields.io/badge/react%20native-0.42.0-brightgreen.svg)](https://facebook.github.io/react-native/) [![Node.js](https://img.shields.io/badge/node-8.5.0-brightgreen.svg)](https://nodejs.org/en/) [![Docker](https://img.shields.io/badge/docker-17.06.2-blue.svg)](https://www.docker.com/)
 
-A React Native mobile application used to work with nanopore sequencing data from Oxford Nanopore. This application is stable for Mac OS X. 
+A React Native mobile application used to work with nanopore sequencing data from Oxford Nanopore. This project is stable for Mac OS X. 
 
 ## Requirements
 
 * [Homebrew](https://brew.sh/)
 * [Xcode](https://developer.apple.com/xcode/)
-* [Node & NPM](https://changelog.com/posts/install-node-js-with-homebrew-on-os-x/)
+* [Node & npm](https://changelog.com/posts/install-node-js-with-homebrew-on-os-x/)
 * [React Native (0.42.0)](https://facebook.github.io/react-native/docs/getting-started.html)
 * [MongoDB](https://treehouse.github.io/installation-guides/mac/mongo-mac.html/)
 * [Docker](https://www.docker.com/docker-mac/)
@@ -16,7 +16,7 @@ A React Native mobile application used to work with nanopore sequencing data fro
 
 ## Execution structure
 
-Open the Terminal app, and **clone iPore and install node modules**: 
+Open the Terminal app. **Clone iPore and install node modules**: 
 
 ```
 git clone https://github.com/josephsayad/iPore.git
@@ -51,7 +51,7 @@ After successfully running the React Native application, you can take the follow
 3. Pipeline create: You can run the pipeline and processes test data available in the FAST5 directory. To run your own test data through the bioinformatics pipeline, remove the test data, and add your own FAST5 data in this directory. You can choose to index 1 out of 9 bacterial reference genomes in the pipeline create scene.
 4. PipeListItem view: You can view the results of the pipeline on the application by pressing on the list items added (with a given run ID) to the dashboard. You will need to refresh the app after the pipeline is complete (check terminal running nodemon for completion status). 
 
-## Future updates 
+## Upcoming updates 
 
 * Loading bar in Dashboard will show the status of each pipeline run. 
 * Upon pipeline completion, the mobile application will automatically refresh.

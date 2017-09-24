@@ -19,5 +19,5 @@ osascript -e 'tell app "Terminal" to do script "
   brew services start mongodb
 "'
 
+mkdir -p $pipeline $userOutput
 cd $userOutput && python -m SimpleHTTPServer 3001
-chmod -R 777 $nodeServer

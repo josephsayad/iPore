@@ -24,6 +24,7 @@ mkdir -p $jobsWorking'/inputs/poretools' $jobsWorking'/outputs/poretools'
 mkdir -p $jobsWorking'/inputs/nanook' $jobsWorking'/outputs/nanook'
 mkdir -p $jobsWorking'/inputs/nanook/main' $jobsWorking'/inputs/nanook/main/fast5' $jobsWorking'/inputs/nanook/reference'
 mkdir -p $jobsWorking'/inputs/maftools' $jobsWorking'/outputs/maftools'
+chmod -R 777 $nodeServer
 
 cp $referenceFilePath $referenceDir
 
@@ -70,7 +71,6 @@ sh $nanopore'/bash/setupUserOutput.sh' $userID $pipelineName
 
 # Clean jobs-working NanoOK
 
-chmod -R 777 $jobsWorking 
 rm $referenceFilePath
 rm -r $jobsWorking'/outputs/nanook/*'
 
