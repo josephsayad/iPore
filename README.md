@@ -1,8 +1,8 @@
 # iPore
 
-[![Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]() [![React Native](https://img.shields.io/badge/react%20native-0.42.0-brightgreen.svg)](https://facebook.github.io/react-native/) [![Node.js](https://img.shields.io/badge/node-8.5.0-brightgreen.svg)](https://nodejs.org/en/) [![Docker](https://img.shields.io/badge/docker-17.06.2-blue.svg)](https://www.docker.com/)
+[![Status](https://img.shields.io/badge/tests-ongoing-brightgreen.svg)]() [![React Native](https://img.shields.io/badge/react%20native-0.42.0-brightgreen.svg)](https://facebook.github.io/react-native/) [![Node.js](https://img.shields.io/badge/node-8.5.0-brightgreen.svg)](https://nodejs.org/en/) [![Docker](https://img.shields.io/badge/docker-17.06.2-blue.svg)](https://www.docker.com/)
 
-A React Native mobile application used to work with nanopore sequencing data from Oxford Nanopore. This project is stable for Mac OS X. 
+A React Native mobile application used to work with nanopore sequencing data from Oxford Nanopore. This project is still being tested on for Mac OS X. 
 
 ## Requirements
 
