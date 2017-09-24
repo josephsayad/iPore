@@ -1,3 +1,0 @@
-ID	Size	ReadsAlign	PcReads	MeanLen	TotalBases	MeanCov	LongPerfKm
-DNA_CS	3560	17	3.40	3252.59	57967	16.28	47
-Escherichia_coli	4686137	462	92.40	3660.72	1801633	0.38	47
