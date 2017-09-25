@@ -1,8 +1,8 @@
 # iPore
 
-[![Status](https://img.shields.io/badge/tests-ongoing-brightgreen.svg)]() [![React Native](https://img.shields.io/badge/react%20native-0.42.0-brightgreen.svg)](https://facebook.github.io/react-native/) [![Node.js](https://img.shields.io/badge/node-8.5.0-brightgreen.svg)](https://nodejs.org/en/) [![Docker](https://img.shields.io/badge/docker-17.06.2-blue.svg)](https://www.docker.com/)
+[![Status](https://img.shields.io/badge/tests-ongoing-brightgreen.svg)]() [![React Native](https://img.shields.io/badge/react%20native-0.42.0-brightgreen.svg)](https://facebook.github.io/react-native/) [![Node.js](https://img.shields.io/badge/node-8.5.0-brightgreen.svg)](https://nodejs.org/en/) [![MongoDB](https://img.shields.io/badge/mongodb-3.4.9-blue.svg)](https://www.mongodb.com/)
 
-A React Native mobile application used to work with nanopore sequencing data from Oxford Nanopore. This project is still being tested on for Mac OS X. 
+A React Native mobile application used to work with nanopore sequencing data from Oxford Nanopore. This project is still being tested and will be stable on Mac OS X.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ A React Native mobile application used to work with nanopore sequencing data fro
 * [Xcode](https://developer.apple.com/xcode/)
 * [Node & npm](https://changelog.com/posts/install-node-js-with-homebrew-on-os-x/)
 * [React Native (0.42.0)](https://facebook.github.io/react-native/docs/getting-started.html)
-* [MongoDB](https://treehouse.github.io/installation-guides/mac/mongo-mac.html/)
+* [MongoDB](https://treehouse.github.io/installation-guides/mac/mongo-mac.html)
 * [Docker](https://www.docker.com/docker-mac/)
 * [Python 2](http://docs.python-guide.org/en/latest/starting/install/osx/)
 
